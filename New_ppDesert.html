@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Meal For Your Ingredients</title>
+    <link rel="icon" href="C:\Users\hp\Downloads\recipe-book.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body background="C:\Users\hp\Downloads\Images\Free-blue-gradient-pattern-background-from-Fotor.webp">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:cadetblue;">
+        <div class="container">
+            <a class="navbar-brand" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_mainpp.html">Recipes</a>
+            <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\Home_pp.html"
+                            aria-current="page">Home </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppVeg.html" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Veg</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppVeg.html">Dal Makhni</a>
+                            <a class="dropdown-item" href="#">Shahi Paneer</a>
+                            <a class="dropdown-item" href="#">Manchurian</a>
+                            <a class="dropdown-item" href="#">Rajma</a>
+                            <a class="dropdown-item" href="#">Chana Masala</a>
+                            <a class="dropdown-item" href="#">Raita</a>
+                            <a class="dropdown-item" href="#">Butter Naan</a>
+                            <a class="dropdown-item" href="#">Missi Roti</a>
+                            <a class="dropdown-item" href="#">Jeera Rice</a>
+                            <a class="dropdown-item" href="#">Curry</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Non-veg</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Sorry!!!</a>
+                            <a class="dropdown-item" href="#">Vegetarian only</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppStarters.html" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Starters</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item"
+                                href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppStarters.html">Fries</a>
+                            <a class="dropdown-item" href="#Sandwich">Sandwich</a>
+                            <a class="dropdown-item" href="#Burger">Burger</a>
+                            <a class="dropdown-item" href="#">Pizza</a>
+                            <a class="dropdown-item" href="#Wrap">Wrap</a>
+                            <a class="dropdown-item" href="#Chilli">Honey Chilli Potatoes</a>
+                            <a class="dropdown-item" href="#Spring roll">Spring Roll</a>
+                            <a class="dropdown-item" href="#Tikki">Aloo Tikki</a>
+                            <a class="dropdown-item" href="#Dosa">Dosa</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Deserts</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppDesert.html">Ice-cream</a>
+                            <a class="dropdown-item" href="#Cake">Cakes</a>
+                            <a class="dropdown-item" href="#Brownie">Brownies</a>
+                            <a class="dropdown-item" href="#Muffin">Muffins</a>
+                            <a class="dropdown-item" href="#Cookie">Cookies</a>
+                            <a class="dropdown-item" href="#Custard">Fruit Custard</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppDrinks.html" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Drinks</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppDrinks.html">Tea</a>
+                            <a class="dropdown-item" href="#">Coffee</a>
+                            <a class="dropdown-item" href="#">Lemonade</a>
+                            <a class="dropdown-item" href="#">Juice</a>
+                            <a class="dropdown-item" href="#">Mojito</a>
+                            <a class="dropdown-item" href="#">Milk</a>
+                            <a class="dropdown-item" href="#">Martini</a>
+                            <a class="dropdown-item" href="#">Iced Tea</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page" style="color:cadetblue;">
+                           Content by:- @Shivansh Garg yooooo!!! Welcome to webpage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://myaccount.google.com/" aria-current="page">Log In </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link active" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\Feedback form.html" aria-current="page" >Feedback </a>
+                   </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container1">
+        <div class="meal-wrapper">
+
+            <h3 class="title"><a id="Ice">Ice-cream</a></h3>
+         <img align="right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgK5TU08c3oQuG_Ku1WZsmlLjZfa4BbWjZmye-6QVKJgXYfgolSzvrUClXrUaDcI4JBWs&usqp=CAU">
+Homemade ice cream is a delightful treat, and making it from scratch allows you to customize the flavors to your liking. Here's a basic recipe for vanilla ice cream that you can use as a base for various flavor variations:
+<h4> Ingredients:</h4>
+- 2 cups heavy cream
+- 1 cup whole milk
+- 3/4 cup granulated sugar
+- 1 tablespoon pure vanilla extract
+- Pinch of salt
+<h4> Instructions:</h4>
+1. Prepare the Ice Cream Maker:
+   - If you have an ice cream maker, ensure that the bowl is frozen according to the manufacturer's instructions.
+2. Mix the Ingredients:
+   - In a mixing bowl, whisk together heavy cream, whole milk, granulated sugar, vanilla extract, and a pinch of salt until the sugar is completely dissolved.
+3. Chill the Mixture:
+   - Cover the bowl with plastic wrap and refrigerate the mixture for at least 4 hours or overnight. Chilling the mixture ensures a smoother texture.
+4. Churn the Ice Cream:
+   - If you have an ice cream maker, pour the chilled mixture into the frozen bowl and churn according to the manufacturer's instructions until it reaches a soft-serve consistency.
+   - If you don't have an ice cream maker, you can pour the chilled mixture into a shallow dish and place it in the freezer. Every 30 minutes, stir the mixture with a fork to break up ice crystals. Repeat until the ice cream reaches the desired consistency.
+5. Optional Add-Ins:
+   - During the last few minutes of churning or stirring, you can add your favorite mix-ins, such as chocolate chips, chopped nuts, or cookie pieces.
+6. Transfer and Freeze:
+   - Transfer the churned or stirred ice cream to a lidded container. Smooth the top, cover with parchment paper or plastic wrap directly touching the surface, and seal with the lid.
+   - Freeze for at least 4 hours or until the ice cream is firm.
+7. Serve and Enjoy:
+   - Scoop the vanilla ice cream into bowls or cones and enjoy! You can also drizzle with chocolate sauce, caramel, or sprinkle with additional toppings if desired.
+Feel free to experiment with different flavors and ingredients to create your own unique ice cream recipes. Enjoy the creamy goodness of homemade ice cream!
+<br><hr>
+<h3 class="title"><a id="Cake">Cakes</a></h3>
+         <img align="right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9LNXyUiB8n3pgcPqZPmmCvAiS5pyqGgCbag&usqp=CAU">
+         Certainly! Here's a basic recipe for a classic vanilla cake. You can enjoy it as is or customize it with frosting, fruits, or other toppings to suit your taste.
+<h4> Ingredients:</h4>
+- 2 1/2 cups all-purpose flour
+- 2 1/2 teaspoons baking powder
+- 1/2 teaspoon salt
+- 1 cup (2 sticks) unsalted butter, softened
+- 2 cups granulated sugar
+- 4 large eggs
+- 1 tablespoon pure vanilla extract
+- 1 1/4 cups whole milk
+<h4> Instructions:</h4>
+1. Preheat the Oven:
+   - Preheat your oven to 350°F (175°C). Grease and flour two 9-inch round cake pans.
+2. Mix Dry Ingredients:
+   - In a bowl, whisk together the flour, baking powder, and salt. Set aside.
+3. Cream Butter and Sugar:
+   - In a large mixing bowl, cream together the softened butter and granulated sugar until light and fluffy.
+4. Add Eggs and Vanilla:
+   - Add the eggs one at a time, beating well after each addition. Stir in the vanilla extract.
+5. Alternate Mixing:
+   - Gradually add the dry ingredients to the wet ingredients in three parts, alternating with the milk. Begin and end with the dry ingredients. Mix until just combined. Do not overmix.
+6. Bake:
+   - Divide the batter evenly between the prepared cake pans. Smooth the tops with a spatula.
+   - Bake in the preheated oven for 25-30 minutes or until a toothpick inserted into the center of the cakes comes out clean.
+7. Cool:
+   - Allow the cakes to cool in the pans for 10 minutes, then transfer them to a wire rack to cool completely.
+8. Frosting (Optional):
+   - Once the cakes are completely cooled, you can frost them with your favorite frosting. Cream cheese frosting or buttercream are classic choices.
+9. Decorate and Serve:
+   - Decorate the cake with additional toppings, such as fresh berries, chocolate shavings, or sprinkles, if desired.
+   - Slice and serve your delicious classic vanilla cake!
+Feel free to get creative with this basic recipe by adding flavor extracts, incorporating mix-ins, or experimenting with different frostings. Enjoy baking!
+<br><hr>
+<h3 class="title"><a id="Brownie">Brownies</a></h3>
+<img align="right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpjRmCLSkgztd1w2iYOc-m-EIX0yqxeZUFJA&usqp=CAU">
+Certainly! Brownies are a classic and indulgent treat loved by many. Here's a simple recipe for making fudgy chocolate brownies:
+<h4>Ingredients:</h4>
+- 1 cup (2 sticks) unsalted butter
+- 2 cups granulated sugar
+- 4 large eggs
+- 1 teaspoon vanilla extract
+- 1 cup all-purpose flour
+- 1/2 cup cocoa powder
+- 1/4 teaspoon salt
+- 1 cup chocolate chips or chopped chocolate (optional)
+<h4> Instructions:</h4>
+1. Preheat the Oven:
+   - Preheat your oven to 350°F (175°C). Grease a 9x13-inch baking pan or line it with parchment paper.
+2. Melt Butter:
+   - In a medium-sized saucepan, melt the butter over low heat. Remove from heat once melted.
+
+3. Mix Dry Ingredients:
+   - In a separate bowl, whisk together the flour, cocoa powder, and salt.
+
+4. Combine Wet Ingredients:
+   - Add the granulated sugar to the melted butter and stir until well combined. Allow the mixture to cool slightly.
+
+5. Add Eggs and Vanilla:
+   - Beat in the eggs one at a time, ensuring each egg is fully incorporated before adding the next. Stir in the vanilla extract.
+
+6. Combine Wet and Dry Ingredients:
+   - Gradually add the dry ingredients to the wet ingredients, stirring until just combined. Be careful not to overmix.
+
+7. Add Chocolate Chips (Optional):
+   - Fold in the chocolate chips or chopped chocolate if you want extra chocolatey goodness.
+
+8. Transfer to Baking Pan:
+   - Pour the brownie batter into the prepared baking pan and spread it evenly.
+
+9. Bake:
+   - Bake in the preheated oven for 25-30 minutes or until a toothpick inserted into the center comes out with a few moist crumbs (not wet batter).
+
+10. Cool:
+    - Allow the brownies to cool in the pan before cutting them into squares. This helps them set and become fudgier.
+
+11. Serve:
+    - Once cooled, cut into squares and serve. Optionally, dust with powdered sugar or top with a scoop of vanilla ice cream for an extra treat.
+Enjoy these delicious fudgy chocolate brownies! You can also customize the recipe by adding nuts, swirls of caramel, or other toppings to suit your taste.
+<br><hr>
+<h3 class="title"><a id="Muffin">Muffins</a></h3>
+         <img align="right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzVsxGSAfT9NW6LVc49zGfusLG4C4fYL3FCQ&usqp=CAU">
+Certainly! Here's a simple recipe for classic blueberry muffins. They're moist, tender, and bursting with juicy blueberries. Feel free to customize by adding nuts, chocolate chips, or other fruits if you like.
+
+<h4> Ingredients:</h4>
+
+- 2 cups all-purpose flour
+- 1 cup granulated sugar
+- 1 tablespoon baking powder
+- 1/2 teaspoon salt
+- 1 cup milk
+- 1/2 cup unsalted butter, melted
+- 2 large eggs
+- 1 teaspoon vanilla extract
+- 1 1/2 cups fresh or frozen blueberries
+- Optional: Turbinado sugar for sprinkling on top
+
+<h4> Instructions:</h4>
+
+1. Preheat the Oven:
+   - Preheat your oven to 375°F (190°C). Line a muffin tin with paper liners or grease the cups.
+
+2. Mix Dry Ingredients:
+   - In a large bowl, whisk together the flour, sugar, baking powder, and salt.
+
+3. Combine Wet Ingredients:
+   - In another bowl, whisk together the melted butter, milk, eggs, and vanilla extract.
+
+4. Combine Wet and Dry Ingredients:
+   - Pour the wet ingredients into the bowl with the dry ingredients. Stir until just combined. Do not overmix; a few lumps are okay.
+
+5. Add Blueberries:
+   - Gently fold in the blueberries until evenly distributed in the batter. If using frozen blueberries, do not thaw them before adding.
+
+6. Fill Muffin Cups:
+   - Spoon the batter into the muffin cups, filling each about two-thirds full.
+
+7. Optional Sugar Topping:
+   - If desired, sprinkle a little turbinado sugar on top of each muffin for a sweet, crunchy crust.
+
+8. Bake:
+   - Bake in the preheated oven for 18-20 minutes or until a toothpick inserted into the center comes out clean or with a few moist crumbs.
+
+9. Cool:
+   - Allow the muffins to cool in the pan for a few minutes before transferring them to a wire rack to cool completely.
+
+10. Serve:
+    - Once cooled, serve the blueberry muffins and enjoy!
+
+These blueberry muffins are perfect for breakfast or as a snack. Feel free to get creative by adding your favorite mix-ins or toppings.
+<br><hr>
+<h3 class="title"><a id="Cookie">Cookies</a></h3>
+<img align="right" src="data:image/jpeg;base64,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">
+Certainly! Here's a simple recipe for classic blueberry muffins. They're moist, tender, and bursting with juicy blueberries. Feel free to customize by adding nuts, chocolate chips, or other fruits if you like.
+<h4> Ingredients:</h4>
+
+- 2 cups all-purpose flour
+- 1 cup granulated sugar
+- 1 tablespoon baking powder
+- 1/2 teaspoon salt
+- 1 cup milk
+- 1/2 cup unsalted butter, melted
+- 2 large eggs
+- 1 teaspoon vanilla extract
+- 1 1/2 cups fresh or frozen blueberries
+- Optional: Turbinado sugar for sprinkling on top
+
+<h4> Instructions:</h4>
+
+1. Preheat the Oven:
+   - Preheat your oven to 375°F (190°C). Line a muffin tin with paper liners or grease the cups.
+
+2. Mix Dry Ingredients:
+   - In a large bowl, whisk together the flour, sugar, baking powder, and salt.
+
+3. Combine Wet Ingredients:
+   - In another bowl, whisk together the melted butter, milk, eggs, and vanilla extract.
+
+4. Combine Wet and Dry Ingredients:
+   - Pour the wet ingredients into the bowl with the dry ingredients. Stir until just combined. Do not overmix; a few lumps are okay.
+
+5. Add Blueberries:
+   - Gently fold in the blueberries until evenly distributed in the batter. If using frozen blueberries, do not thaw them before adding.
+
+6. Fill Muffin Cups:
+   - Spoon the batter into the muffin cups, filling each about two-thirds full.
+
+7. Optional Sugar Topping:
+   - If desired, sprinkle a little turbinado sugar on top of each muffin for a sweet, crunchy crust.
+
+8. Bake:
+   - Bake in the preheated oven for 18-20 minutes or until a toothpick inserted into the center comes out clean or with a few moist crumbs.
+
+9. Cool:
+   - Allow the muffins to cool in the pan for a few minutes before transferring them to a wire rack to cool completely.
+
+10. Serve:
+    - Once cooled, serve the blueberry muffins and enjoy!
+These blueberry muffins are perfect for breakfast or as a snack. Feel free to get creative by adding your favorite mix-ins or toppings.
+<br><hr>
+<h3 class="title"><a id="Custard">Fruit Custard</a></h3>
+<img align="right" src="data:image/jpeg;base64,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">
+Fruit custard is a delicious and refreshing dessert that combines creamy custard with a variety of fresh fruits. Here's a simple recipe for making fruit custard:
+<h4> Ingredients:</h4>
+
+For Custard:
+- 2 cups whole milk
+- 3 tablespoons custard powder
+- 4 tablespoons sugar (adjust to taste)
+- 1 teaspoon vanilla extract
+
+For Fruit Mix:
+- 1 cup mixed fruits (bananas, apples, grapes, pomegranate, kiwi, etc.), chopped
+- 1 tablespoon sugar (optional, for macerating fruits)
+
+<h4> Instructions:</h4>
+
+Prepare Custard:
+
+1. Mix Custard Powder:
+   - In a small bowl, mix the custard powder with a few tablespoons of milk to form a smooth paste.
+
+2. Heat Milk:
+   - In a saucepan, heat the remaining milk over medium heat until it comes to a gentle boil.
+
+3. Add Custard Paste:
+   - Gradually add the custard paste to the boiling milk, stirring continuously to avoid lumps.
+
+4. Add Sugar:
+   - Add sugar to the custard mixture and continue stirring. Cook the custard on low heat until it thickens. This usually takes about 5-7 minutes.
+
+5. Add Vanilla Extract:
+   - Once the custard has thickened, remove it from heat and stir in the vanilla extract. Allow it to cool to room temperature.
+
+Prepare Fruit Mix:
+
+1. Chop Fruits:
+   - Wash and chop the mixed fruits into bite-sized pieces.
+
+2. Optional Maceration:
+   - If you like, sprinkle a tablespoon of sugar over the chopped fruits and let them sit for about 15 minutes. This process, known as maceration, helps release the juices from the fruits and enhances their flavor.
+
+Assemble Fruit Custard:
+
+1. Combine Custard and Fruits:
+   - In a serving bowl, combine the cooled custard and the chopped fruits. Mix gently to coat the fruits evenly with the custard.
+
+2. Chill:
+   - Refrigerate the fruit custard for at least an hour before serving to allow it to chill and the flavors to meld.
+
+3. Serve:
+   - Serve the chilled fruit custard in individual bowls or glasses. It makes a delightful and refreshing dessert.
+
+Feel free to get creative by adding your favorite fruits or adjusting the sweetness to suit your taste. Fruit custard is a versatile dessert that's perfect for any occasion.
+<br><hr>

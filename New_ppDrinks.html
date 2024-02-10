@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Meal For Your Ingredients</title>
+    <link rel="icon" href="C:\Users\hp\Downloads\recipe-book.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body background="C:\Users\hp\Downloads\Images\Free-blue-gradient-pattern-background-from-Fotor.webp">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:cadetblue;">
+        <div class="container">
+            <a class="navbar-brand" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_mainpp.html">Recipes</a>
+            <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\Home_pp.html"
+                            aria-current="page">Home </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppVeg.html" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Veg</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppVeg.html">Dal Makhni</a>
+                            <a class="dropdown-item" href="">Shahi Paneer</a>
+                            <a class="dropdown-item" href="">Manchurian</a>
+                            <a class="dropdown-item" href="">Rajma</a>
+                            <a class="dropdown-item" href="">Chana Masala</a>
+                            <a class="dropdown-item" href="">Raita</a>
+                            <a class="dropdown-item" href="">Butter Naan</a>
+                            <a class="dropdown-item" href="">Missi Roti</a>
+                            <a class="dropdown-item" href="">Jeera Rice</a>
+                            <a class="dropdown-item" href="">Curry</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Non-veg</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="">Sorry!!!</a>
+                            <a class="dropdown-item" href="">Vegetarian only</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppStarters.html" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Starters</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item"
+                                href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppStarters.html">Fries</a>
+                            <a class="dropdown-item" href="#Sandwich">Sandwich</a>
+                            <a class="dropdown-item" href="#Burger">Burger</a>
+                            <a class="dropdown-item" href="">Pizza</a>
+                            <a class="dropdown-item" href="#Wrap">Wrap</a>
+                            <a class="dropdown-item" href="#Chilli">Honey Chilli Potatoes</a>
+                            <a class="dropdown-item" href="#Spring roll">Spring Roll</a>
+                            <a class="dropdown-item" href="#Tikki">Aloo Tikki</a>
+                            <a class="dropdown-item" href="#Dosa">Dosa</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppDesert.html" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Deserts</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppDesert.html">Ice-cream</a>
+                            <a class="dropdown-item" href="">Cakes</a>
+                            <a class="dropdown-item" href="">Brownies</a>
+                            <a class="dropdown-item" href="">Muffins</a>
+                            <a class="dropdown-item" href="">Cookies</a>
+                            <a class="dropdown-item" href="">Fruit Custard</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Drinks</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#Tea">Tea</a>
+                            <a class="dropdown-item" href="#Coffee">Coffee</a>
+                            <a class="dropdown-item" href="#Lemonade">Lemonade</a>
+                            <a class="dropdown-item" href="#Juice">Juice</a>
+                            <a class="dropdown-item" href="#Mojito">Mojito</a>
+                            <a class="dropdown-item" href="#Milk">Milk</a>
+                            <a class="dropdown-item" href="#Martini">Martini</a>
+                            <a class="dropdown-item" href="#Iced">Iced Tea</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="" aria-current="page" style="color:cadetblue;">
+                           Content by:- @Shivansh Garg yooooo!!! Welcome to webpage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://myaccount.google.com/" aria-current="page">Log In </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link active" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\Feedback form.html" aria-current="page" >Feedback </a>
+                   </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container1">
+        <div class="meal-wrapper">
+
+<h3 class="title"><a id="Tea">Tea</a></h3>
+<img align="right" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhUZGRgaHBwaHBwcHBocGBkaGBgaGhgcGhwcIS4lHB4rIRgYJjgnKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHzYrJCs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAKIBNwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAIDBQYBBwj/xABBEAACAAMGAwYEBQIEBQUBAAABAgADEQQSITFBUQVhcQYiMoGRoRNSsfBCcsHR4RRiByOSojNTgrLxFRZDk8Ik/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAECAwT/xAAjEQACAgICAgIDAQAAAAAAAAAAAQIREiExQQNRImEycYEE/9oADAMBAAIRAxEAPwDOLaH+aHGfM+aGEx1HiDUelomDUwWlqf5obZsTlBiWaukK0OmRraH+aHfHf5jEpstIZ8LGFoKYmZvmMPDN80OKQStmG8JyQ1FsFqx1hOkFPZqawv6fnCyQYsGDRGGMGGzjeOpIG8GSDFgqsYTzNoPezCkDtZiIMkGLIPjGHLaDvC+Cdoa0kw9MNonFsIhy2xogKUpEqJCaQWyUWoxOlrrnEIlxIkoQUh2xXgYYSdDE6yxHQi0hWgpgprvCuwV8NaRHdG8O7FTQyWvOJJ5u0pCCLvCdKjOACSVNO0Odb2kRSKiDpcxdYmy6AGkHSsco4i1aYkc+Mm0JyCitVn2jvxiNINmzF0gWZNG0OLsTTRGbVWGXjpDZrDQRGk6mkUkS2TXmhByIYJu0caedRDAf8QxxrVvERcnKICTtDoVhLThCgZZdYUOhWUQYbQ5XA0gVXpEomV0gxCyxlT6ZCCltZplFVLtFNInFs5Qmh5fYVMtjbQP8ZjCS1KTiILlzkpgIXHRXPYEHeusTLNfeJTaVjiWgVhW/QJL2Na0PSFKZzqaRoOE9l5s7vt/lodW8R6LGnk9mpCAAl2pzoCd8MfKGrfCFJxXLPO0Z9ffAepiSUkxiLqOfyo7DHmqkR6StjlIapLQHelT6nGI5rxWJnl6MMLLacKSZhG/+WtPJ3B9oIl2GZ+JHH/1Y8sHMaWY8CTJw3ES0vY1KRVJZG+R/WXh/uhjWJtUf0Q/R6+0WRtI+YesOWeNx6wlFexuT9FLNstM2I/MjrTqaEe8Ry7M/4SrjdWVvYY+0aMTIY8hG8SA88j6iLxfTFkuzPMxGBwPOEHMXFo4aSKI9NQH748i2IH2KRWPNuMFmpcPzfg0pnlWvMbkRLUlyi4tS7Ir5EdWcRBrIhzzgFpee0JSQ3F9DjaIjOMWXDuFrMAN8CuHnpA8+z3HZDmpoYcZRfAnGS5BIeCdImUjaOhxtDsmiEM0cBaCL4h6sNoX8H/QdWYbw6+0FFxtD767Qr+h19gWMKjQek1dod8Zdod/QY/ZWUbaGkcosnddoHLjaKX6Ja+wQQ5mgggQ0ywYYiANEfxiDQiCvgiILXLpiINMNo4J42hQPCgpBkVKOg/DEiTE1WICQBiIklrXSHQWT1T5YRRdo4BTGkazg3BUCiZOGJxCnIDSo35QKNsTlSM1Z7Je8KE9AT9IcaLUU8o9Ks3Epa0FaCCrXKkWhKOqvt8w6EYjyhuCJXkPJxczIjYdjuAKz/FdagCqgjXSv3pAU/gqLNVUJK3hUNmMd9RG17PzFEphkVY1+o9oylH5JdGilcW0WTn0iutVpVeuwxP8AEMtFrLZYD3P7QA6wpeXqIo+PuRyfbWOQpAE2a51giYw3iEuI55Sb5ZvGCXCApkpjqYEmWInUxal+UMYxOitlFN4cdzAFpsjIC15qDqfpGkn1phGG41wcKSzWhlBJNGN6mpoDpFRSYtt0Ef8AqDplMNPOnntBUntM6mjUMZ+yyJSqWBnE0qD3QM6Vu3ajXAk1HlAtqVgXAAYI9xioAJYKK3eYyNMsN43iqJnFHo9h4/LegJunYxaTUSahVsVO2nMc48QnopPdZlYH8WN7HTAEH1rGz7H2iZKe67l1egGNbpFcvvSNVL2Yy8ePBpuHS6B5UzxS2CKwzZGUMh8q3fKJrTw91HiTH5jd9ouZcn4aGaw7zXXK0ySoRSdakkHyim4pZnmOZqOH0ptyp+sc004vR0QaktgtnkTZbd1kIOYvZdIt7omYuCGw7377xUq5buPLauWRHoYmkWcyiBfdqnuqO8QebaDrGcZO9Gskq2xWyyuh3U4hhkRArId4KftRJVzJcK4O1CK0xFdDEzWizOncVl5gg4xspx7Odwl0iuWWYIkSHOQw5mn1ziVCEUm7WuTHH6YQ+xWyWT3gzNiahqUoNBTDKHm3+KFilyClsY7WCWlI9QhJJOCtmehiteimlacjGiol2FoOccKHeIVvkXgt4DURElsG9DsYKFYS0s7wwyjvDBajqIll2hTFbFohaWd45cO8Esw1iJnGkFioYqnGjQ1y1McYTKIgdqakQAK4I7DFmnUVhRQFc8quQMTJK3hLNPr9InedWgrSsRbLpBnCLGpcVxCguQdbuQ8zSLa32hrt7Mk0GwrUkxW8Knd98a9ym/4li74nKrZ1YfgIJpzqD73YpXiZyrJJmcIelS7V3qYl4Q3wiwUsL1SAPDeqTUDSpOkdrkK8zCvYnExnkzTFFhwW1PNRHmKUdjW6a3gAcLwOR5RdTL699MSRRkrS8OXOM9OnuypcdQwYXrxAvKM8aHHL3jRy3qoMa0pKmZO4u0MXiatgMH1VsGHlr5RFMmFsz5aR202dHHfUN9RzBzEVk6yTkI+FMBXVZgLU6MMfWOefgl0zaPmj2g6ORVz7baE8UgON5b1P+lgPrDRx0Uq0ico/JX/tJjB+Oa5RupxfZbxwxSHtRZhm5XkyMD7iEO1Nm/5nsf2iGmiueC4ZYEnWFGNWUEjKoGEVn/u+zfM3W6adKx3/ANxqxKpLcnQEEV6YQ9omgu0cORhSgitTgaJeNKljVsMyc8NIenErTMa6lmu1BoXJph5RccNss6gM0rU5hRlhGsc3wZzxXZRp2Saee6gAzvMKAfvGq4H2dk2cdz/Nmau3gTe6upg8gKtWqwArTpicIsLOuRBwqCABy19Y3jB9mDmq0CceklbLM79XN0lzqb67aUwjDyuIvLPfXD5hkehjT9v+IfBsZal4l0Xmcan2UxiuEcVWcwVWoM2BzoBjGPnTyVHV/naxdmkRr1HZ2VQK3SRQjc8opeP2m0TO7JQmXSjFSA7cqVwXpB9oZXIRjRQAzUpTcIeVKZRTCe8pjfFBo6ElCK5k5jzjJy9GkY3tlBZbKAwvl0b5WH6NnF3KlLq48lz94tE4jeTvBHU7gEQLOstmepBaUR8p7vmpqKdKRLVmidBVjtiJqx3NcMdwaiIJXHrE80yheQ0JvigTOlPFy0jN2+0qLyS5yTDr3ShwzwOHvFJJDhWdUW73QWZTdFMSValBjhhG/ji0jLyYyPWpfDxQNLmoRgal7tP+kitYzHaXiSf1rgG8oCVIODNdxIHWMvwnirIl1Xa87Gh7zCuFL2IqDzgXj06Z8RnPhLd0imZFaVABIzoTtGsdvZzyjS0em8P4khUY55AY+0M4nLVmxAoRWPM+G8VmKe7mdY3dmdri36saVrnGl0Z1Y5EK+Bq8j+8JJlc1IMK+scJ6wBSJPitT9Id8cHMERAZsdMzlAIlL7RC9DHL9cKREVA3EUBKoAhQzHQgwoAAA+OcTS3Fa1gVZ9MbvuIT2rKi8ziMokC0sdsCMG54jcHAiNlwy1Ky3agqwwrkQdDWPPDaCfwc8CPKDOHcTZGGBuY4VXDmNjDToUo2XfGuHPLJdAWTUfiTqNRz9d4oktBOpxjWWXjCOAocE6Y0YUGxzA+zEkkor3/hoW3Kj7rzh4roSk1yVXC+z9pm97wIfxNhhyGcaZbKZQEsm8VpjlUUGMGSu0GFGljyP6ERBa7UJhBAIwpjTfT1ioqiZSsE+J3iDtHHMdK44gVGusMdMM9a9IexaIiawxjCukMdtP1jhhJgwSdZ1Y1ZQaVzAOcCy+HSwWPw0FTU4DGmUHtEbHPeJaRSbOLJWlLo3yEELEQyhyPiRhXTpuYNC2TyXN6g8Op1B2iwk4QDIO8GSjDQmGoAc8Rzg2WwGJ+8f5gCU2g84NlHKuH3/ABFCBuNcNS0IEmCqg3hjQ3qEV9CYxNp7EPKdplnYOSrLdNA3eFMDkfaPQZjVMRNEShGXJcfJKOkeM2njEyVaJiTJbBSRgRRhRboI3g6xcTv4KQc9QPUR6Pxfhkqet2YgYaH8SndToY8v7T9mnsrX8Wl6OooycnA+scvk8NcHZ4vOmqY+0Scaofhtrd8LdVyga0NOKMpCZeK+q1xGjHXlFclpcYk3xuDRqc94H4pxC8qhSDQ1IOBFKb6/tGcYO6NpSVWDyzdUVuggm8Kd9m/D7kxJaJ03AXv8tMAtcgfFUe0SG1Wg0mFZhXAX6HEGpIvAUppTYxW8RnG9dUUGFQKkV6nE6R0JNsxbSRY2WzqEAVnDuKlge4qmtAw3NIH4ihKIqsHVagtShqMgcSKCpp1grgvD1nMqzGKN+EaMFxy5RL2h4a8vwMhSvhWgIO5BzgXIpNVvgg4FZ7joSgcMQCTUBfXCNfaeI2eUwDO1dQpqOhjJ8NtNZSKxPemF3NchLukA8s4HsU0TvirVRfqVDYYgllodxlzrBt2FRSWuTayLYj1IFRXTMeRglErijVG38aRnOz3Z6b3Xd7i1rcBqxpvTIRqnsWNcQdxX7MWn7MpJdA7GniXzGIjlNRB62dsmKnnkfOG/+nahwp5ZeYgyROLK8vDTyP6iLJrAfnWvKsQGxn5x1pFKSDFgTL1HMZQoleVdzYV9o7BaEZxRUwrprhErmg+8hEaOBvj1hgIO3OLPg/C3nuEUkZA4b7c4ryCcadP0jacO/wD5vhCtO+L53OF73w/6RC5B6NBJnyLIBIaUSBn3QQTTM1zMEWey2afUynKNohx/2tRvQxaW2yraFyAmL70jGW+wsh2/cffvFcGfJbTeETkr3b4qSSpLH0ND5ARTWq1sjl3mBJKDFaCpNDevEjBaY6GtOhP4bx+YlAxvrsxxHRs/rFraJ0q0jK62/wCP9mH3hBytBxyBGcDQ7xxhECyXQm+huggBqghq6gVqNsQMxD6nqOecOwOORlXPLnELJ6RLLlhQAMhuST6nGGM5qcqYdRvCbAgehwhXYIC0z1OGumphjyxW9TGlPKACNV9IkVY7KRiTUUH1G8EhABlCAZLWCpaaQxEiaWwzBrX7wikATKpBSHEY74adYr5U0aUpjljjqPWLSx2c0vNgTlyH7/xDJIzDGMVfGuPpInLIulnZQxpkActCTvBqTgyhhXHfOEpJuh4urHmI56KylXAZSKEHHCOl4jZobVqgTp2eN9teCNYpwKA/BepT+0jEr6Go5HlFLZrZQVVVL6EgEg7iuFY9m7YWAWixzUpVgjuu96V31pzNSPOPAFqIwUU7+jpXkar7NDZ59pci7fJN5mVai9hjVRhjEciY3dlOboyYFSWzOFCMCBT2iCz2ecVDJUAmpNaV0B5xoOGKyqL+LjNjWp2x1pCou6WyaVwpVa8r3mAIGYIryOIMAWjs+0xjdBZqFj0GJMXaSg+LmtPusGdnuKrLngV7hqrEmuJpr5Ux3gbUVZm7kzI2Psy5Bq1AdsRFvYuzsiTddpneOBDZDmtMx1jVcfsiS3F03VmC8hyzzUHkdIzFtW1F1QKrqT4jQEDW8f4hNtxtME1Zq7DJwARkfkDQ++EKazA0ZSp5ikUFsnf0jD4iVQnuzEDXH5BhgG5HHCLOzdoJU9CgDEaVOR0IJxjOLle0N/sI/qBqfvyiJ5+wP1iFTsK+zfsY6HrljT1HUZiOhRIyZIJrnbprCYsczSIy9c/fXoY5Ncgc9m/Qw6FY8ou1T97woEVi1bxuedR+4hQwMxNtKkjMDLAHSnPzjhta44HHDoo88TDHlHKn2YFngg/esLTDaLrhE9XtMla92+uHeGNa69I2PFJV9CNQzGuuZjzWyTzLdJnyMrdQpBp5iseo2lg110NVcBgdMR+o+kHHAO3yF8I42XQC9SbLADCuLKMAwhW3jSODeoG+sZjidkaomSzdcbe4PKKZ+Igm69Uf/aehOXRvUxVmdWad7YpNARXfeJrPaWqKY612jHzXYY16HQ9DlB3BOJOrjultKVHtUxKRZvXtrhMcd6545QK9o98jtvWmXWI7VbAy0vKpI/EwHWBZMygoXVidFIJIGdBWpirJqg02u4CGJY1w7pyY0WtPQnSEk5aMAFFDQgGlCcTphnAv9URkAaaE0MT2W0qcFbIkkHHxY0qdIgZPJNB3QzVOOIw0OfSDESBbNNJwKUzrerXlQ4g+sGhopEyGUpp+nrHUN4BgaDHAggmmuMSEoaXqVrhvXlEgmrmMaYecAEarTmc+n8Q1QThiCdtMYSP3sFoScTTOnOLmwyhtX94AGWfh4Vb4UAL4cPenr6wUZxZLwNCK+0O4txFJEsvNcKtQpNDmxoMBX+BUxR9qXlpZGE2ZcDm6DneZsVUDyrXSkO6BIyHbK0hZyTXY18JuAgkJiP8Au+kX/ALQryiyOzC9XvVJF4BiK9ScNIxfErW4lL/VKHl17kxHHiCkqHqC1aA6HziJe1s2ktLJJKSRRHZh3Xmtn32wXYAmppkMoxjy2bSXxo9JUxIq4VgXg99pamZ46Y4UrzwiySVeNAK19OZPKNk9WYNbohtBAkznYVEuU+H9zCtBuaAf6hHz5P4eyMFwY0rdKsGA3wGWEex/4hcdlypK2UOQz952UMSBWtaritTkdlPKPGZ0ykw94zDWgOPe2rudIyR0RS7CrHaXRu5lUVUE4bUDDP19I2qJfXuIAWUN3qrczv4HGmFBnrXKKpLVLlSy00K7MPCAFUGlDQDTSpzz5RXC3EyHmKbpS44AHdN+ZNVlP9t25/oG8Z7ldHQ8VSZo5spWNxWbnVWp5YUr0jNPYp8mYbiF1Y1pQxyz25JtAZaq2l2ik9G35Gv76fhlqN2lWc/MygV0p4qlgAKnf0Di2/jIiUYr5IsWeY8pBMAN1btKEihxo1c9BWM/b+I/BOF67XFSCyj8h06fSLt5w2IPI0+hFYGnpfwNDXQqDh5UIilHVGbohkcXBWqOpUjvKaFG/MpwhTVRlDpKAAxZVVrrYjvSzkc8VJphUHSA27NSnOAof7SfcHGL7h9gCIEVqhRQDEHzH8RCji7TB75BknUGANPkZTh0amHn7QSrBgDcf0NR0YROWIzFev8AH7QkuDNB1oW9xjGmTJxRBdcjwMwOt2jeYyMQTJMwDBHI+UqSPLUe8WaTD+BjTrUDreqR7RyZanGBoR+ah9DX6iFlIeKKQLMBqFfowFPI1rCi2NtrheKn+4Gnrl6GFDyYsYmLMz/d/b6ZRXTHqa+fLHAe0c+Mpr3vQ/XGIp5YA0OZzww/mHaQ8WySbSmX31jVdkuNqo/ppp7v4GJyPy105RhjOIIqa03IFYelpB1oYpCkmj1+fIwORG+/XYxRcR4ar5jHfWKXgfa1pdEm1dMg2bL13EbSzWqXMW8jBgfvqILrkhxvgya8GZfCWWuVK0MEyuGzP+Y4OWBoelRGlnSRmWp1yjqyyMCPOGkmS7RQWbgxVw4Y3hjU4n1MWklBiblNxTuk60/kCLJE3h6y6mHiLIr2lq2Fa8jiR0Oa/TlETo6+HvDY5+RGf15CLR7EGrQkHcUqOkOThwUUGWJyriTUnrUmBxYWimNtbW8NMq9aERBa+PCSmFdguNT5tpF+3DmO1d9+o1ist3C0cXZiZVodMc6HSJaopUwfh/aF2AIRiDlTvaVxwJ/8xaLapzmoRkXdqA0pmAcjyocoG4LY0s7E4sDgOW+GsamzvLfC+ByOB94UVfISaT0YftZxibKMsS3opqXIwJIIopbMCmOFK+UbHsPxGZMs956tSl1jQFs73/TlQ9YPHAJB8aK/5sR6RV9orDLWjqWVwAqlHZGCg+GqEEricDUYwNY/JgpJrEB/xC4ogEuU7i67EkUFe6BdatcACQD+aM52w4ktsSzIrgTFvEKPDRggF6pqrCg3zaLDivZUW51nJMZGAuuudaZMhPgO/rvUdv8AD6WLhvOCrAsxe8zjVaAALvXlEKTkrRoqjSfI7sx2cZ5TLPutKBBAreVmBqCBsP4jSy+HICMC13w18KflTJfIQfYpKogRFoi5Y4cySczCtnFLNZwWdwfp/MaRcUiJKUmE2SzE4mgGpOQis7QdpZdnUohvORlXvHmflT6xiu03+IzspEgUXK8chX5R+pijSWk2UJpm1m3qPU08RorKSagjAZ66ZRLd8jUaRU8emvNdnfvOxqTkfTbpFPYZiowZ1LAaBrtDoctI1y8LmuSLl9RmxKK6jfvEXwMcsescTsd8TFbRJOFQLzBuYJu0gcorTY1d2ZTids+I5IrQ6bH9YMXiCiyvJu95ihBGykkinX6wbb+zUySRfUMpydCGB9M/rBkjgwdMrw0K6ciN4aqlQW7dmSlA1Gh5mn1jc8ElTUX/ADHBBHdVQra5lhywoIGXgZB8IcbVo30+tYtLNZ7oogHNWph1/j1g0wTdUFljTX0NPPaI2I3w63gPKFLcE0ZLp07xoehGFYISTUZup9fXA1g0goiWcabj1Hsa/WCknVArXzoy/wCoCq+eUNSyNj3vO4R6iv6GIzYjW8bnJlH/AHYnDypEtpjSaCpkwjp/cQyno1MIidx8pU7gilPzAxACFNCsv8ynA7VWnuInSysO8gTHYllPSow+8YWh7GO5G/WtT5MuXpCFpNMWJ/Mfoa0PuYfdWoVlaW2eGCmmev3vE83htRUPQ87pXzELJIeLBGmKcDeQ88vI1+sKGmSyYG7TTAEelTTyhQ7QYs84pvmBU7KNBzMOSaSVGjKacjU/tAtpfQZZnmYdZpwAFfwmo88xFVoMt0ITgRQj9vSGLLoa1HKIK4xIisx1MVVEN2E+cTWW1TJZvI5U8sj1ENWyuMx5VxjglMdIVoMX6NTYO2rrQTUr/cv7Ro7D2lkv4XAO1aGPL2Vh91iEmCkI9ulcRVtj98omS1LtSPE5NvmJ4Xb1r9YPkdp565mvqIPl0xPF9Hs8u1JvBKT0+YR47K7ZuPED7GCV7Z/dDBlIMYs9iSYnzCHv8JhRiseQDtmPm+sdPbT+76wZS9Cwj7N9xSzIhF2YuOQJ/WAEJXxa+YjC2rtUH8TV9YDHaO74GYdK09DC2+itez1SzcRdPA9BtWo9DBMy2rNwdakY1BOnTKPIJnaqZpe86D6CBB2itAJKuy1BBoTkc4bTaoWrs9iXi8iUDdYLXPHE/rFPb+3UhMmvHln+8eSzLS7eJmPnh7RxJcQvGkVkbXiPbyfMwli4Nzn6RRTLTMc1dyx5jD0rAMmz11x2yMGypJEVigTITw52/ECORH0i24fZJUpT8R2BO6VHkVP1hsmWNQD1p9YMezrTOldDQj9odNhdFaOMKjEIrOMrxFCPQxZ2XtBLFD8Fq60Bz3yiFrCuq15jA+kD2k3B3WPQ/wA4xD8UWNSo3fZfiImtcdFu3TUZ1x1EQW/hzyp7BWF00YBVAZkYkCoJoSKUrT6xU9gZ151wBN1q7ihxp6xaf4gSBOaQtTVb7UBAOJUDnoYwjak4opvsvbFaQgqQEGdML7cq6xnpgUtX4tzGoDSvDXIX1qPeALFM+Gv4ywri9XI3o2kT/wBeD4sK8iRGsYNA5JhP9NfBAnI45ID+sdlWGYMBOX0x94BmS1bEUJ+Zcx5g1hK7jJ7w2cXvfA+8Xi/YskWjWaeP/kU87tD7REbNPpX4wHRCf/1SAGtbjG4eqNUeh/mHpxFjoW6EVHXHCFjIeSC5Ml1xaZXoi3fQmGfGKHCpGtEQDzFYjNqBzYjk37/zEZm7Nh1qPQwsW+QyS4CGtwIoSKbXRT3gYWpxULMAG1FFOlYjK1NQT5EfSGGRe1qelD6RSikS5NhKTpgGDnrdQ/UR2A/guPCVHqPpCisULJmIm2bf+IYbPTSLcTRShFR0gWYRpWmx06QJg40ApLxgpKqMDhDjLIFQRjlXL/zAU9W19soT2VFpbLAPiGD3yMxTLSgJzjrzSGZVF4Vxxxx/SBeGt31GgP8A5iC0zj8RiDSpicbZedKywpgRlUUpvFZMFMiIIW01zzzqIin0Jqtcc9ocU06ZM6atEIjsOVIdcjQyojuxwrEwSHBd8IkYKFjpSCXkw0AiHYmgekdCQWsmsI2cwWFAtyHLLMGolPEKjfUQUtmwqKEbwWGJXJLrnhz0gpLKR+4gpJSxOkq7ippyOIP7Qgogly/mWo3GfpFjZrKaVQhl1B05VzEKzhGOzfL+x1ETfDoaqSp3H67wDHCygkAd1tmyPQ5GJRIYeLA8gPpDUtBPcegrk1O6euxgm8yYeNdjmPyn94AIXQ0BBHPD9ICt0skHCvMZfuItEIcd0+WRERzQfv8AWACn4FPtMhm+E10EEGqg57Vi5M29QTCxbd8z0YYfSIgGXw/wesOLk4FfWtD0gpXYWEoxXANUbNj6NnHFdCaHuMd8j0OR84GQsmAWo2OnQxPLno+BAO6sMRABI9nppQ7itYiuNvUdaN/MOCEeBuqMajy+WOoofAOwcaEd4dNxAA0d4UU+WN4euMMmWcsR3iCNcj5ERLNlH8RqBrShHpiOoh4lvStQy7jxU6ZGHYEQaYuZDjn3W/1DPzEcWcDhQqflNPbQ+UTJLciqtUc/vCI3s7thQEag/pBaCmNLqPEhHMCvtmI5fQioqR0P2I4qTUqKBl0DeIdG/eOCYGyBVxmMj5g4EQxHDMT5mHW8RChwtgXB1pzGIPUaGOQCM/OiB9IUKMom0iJcmiE/pChRbIXI3hvi8j9IFn+IwoUC5G/xCJGUJc4UKF2J8EixwZwoUPsOhaxx4UKACaV4YjmQoUHYuiWx5wY/hhQoT5GuCMQRw/8AFChQ3wC5HMO9E6DCFCgAjtXhB1Bw5YwXOyHQQoUUIhfwmDbEe4OpjkKJYIbO/wCKOkWkzJekKFCfI1wQrrHV8JhQobEiWV4RAts0OtY5CgAYPGI7bMkOt4Y65iFCgAtxkOkQWLxONMIUKJ6KR2z/APFHMY84JmawoUS+SkKZkIrOK+BDrUY6woUOApcHW8IhQoUaEH//2Q==">
+Certainly! Here's a simple recipe for making a classic cup of hot tea, commonly known as "Chai" in many parts of the world:
+
+<h4> Ingredients:</h4>
+
+- 1 cup water
+- 1 cup milk
+- 1-2 teaspoons loose tea leaves or 1-2 tea bags
+- 1-2 teaspoons sugar (optional, adjust to taste)
+- 1-2 slices of ginger 
+- 2-3 whole cardamom pods 
+- 1-2 cinnamon sticks 
+
+<h4> Instructions:</h4>
+
+1. Boil Water:
+   - In a saucepan, bring 1 cup of water to a boil.
+
+2. Add Tea Leaves or Bags:
+   - Once the water is boiling, add loose tea leaves or tea bags to the water. If you like strong tea, you can adjust the quantity accordingly.
+
+3. Add Spices :
+   - Add optional spices like ginger slices, cardamom pods, or cinnamon sticks for additional flavor. Adjust the quantity based on your preferences.
+
+4. Simmer:
+   - Let the tea simmer for about 2-3 minutes, allowing the flavors to infuse.
+
+5. Add Milk:
+   - Add 1 cup of milk to the simmering tea. You can adjust the ratio of water to milk based on your taste preference. For a richer tea, use more milk.
+
+6. Bring to a Boil:
+   - Allow the tea and milk mixture to come to a gentle boil. Be cautious to prevent it from boiling over.
+
+7. Add Sugar :
+   - If you prefer sweetened tea, add sugar to the boiling mixture. Adjust the quantity to suit your taste.
+
+8. Strain and Serve:
+   - Once the tea is brewed to your liking, strain the tea into cups to remove the tea leaves or bags and any spices you added.
+
+9. Serve Hot:
+   - Serve the hot tea immediately. Enjoy it as is or with your favorite snacks.
+
+10. Adjust to Taste:
+    - Feel free to adjust the quantities of tea, milk, sugar, and spices to match your preferences.
+
+This basic tea recipe is a starting point, and you can experiment with different spices, tea blends, or sweeteners to create your perfect cup of tea. Whether you like it strong, milky, spiced, or sweet, tea is a versatile and comforting beverage enjoyed worldwide.
+<br><hr>
+<h3 class="title"><a id="Coffee">Coffee</a></h3>
+<img align="right" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBcUFBUXGBcYGxoaFxsbGhobGxcbGxsYGxoaGhobICwkGx0pIBcaJTYlKS4wMzMzGiI5PjkyPSwyMzABCwsLEA4QHhISHTUpJCkyMjIwMjIyMjIyNDI7MjIyMjIyMjIyMjIyMjI0MjIyMjIyMjIwMDI7MjIyMjIyMDIyMv/AABEIALcBEwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAAIDBAYBB//EAEQQAAIABAQDBQQGBwYHAQAAAAECAAMEEQUSITFBUWEGEyJxkTJCgaEUUrHB0fAHI2KCkuHxFTNTcqLCFkOTo7LS04P/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QALxEAAgIBAwMCBQIHAQAAAAAAAAECESEDEjEEQVGBkRMiYXGhQtEyM1KxwfDxI//aAAwDAQACEQMRAD8AKJINiA0dk0Z95rx5wmP1R2zX8jFpMYrTqEc/uxzVM7Lgeny5I4WEWAq8xHlBxiu+o/pEgxqu27t/4YnbMdwPUugtaInkseUecU2NYhrkluefh2iVMcxE7Sz6D8YmpjuJ6C9E1ozOO9i1ntnFweOu8BzjeJH/AJR9IQxrE/8ADPp/OGlMHtDWB9kPo5utr9YOvQtxIjDf2nif1D6fziMVeJE7NFP4jEtiN3NoSstpmZRbhAiinibcob2Nj0MZatnYhlNwx56wJwSfWS5hZVazEZhbrrD2yaFuinR6ZV4w1PIZGlkqb+K3PnGEwTFVmTZiXtmUlfMQT7bdsEmShJlixt4vOIMHeiTDc5C98c2Y+9fziduLNFLKXuG6vC5c+nZmlnKBcMDa3xjOzUkrLX6M5RiQjsL6Djm5xDXdrgtGlLK0AHiPEwsRxGXJoJUmWBncZ5jcSTqYFF0JzVlWuwVWnSpCzAe9IBdt15wQ7UYFMopYlJPLJvlP8oBYbRtNUPMmmXxlkAlmy8rbQ7GO+mEWd5uwF1IPzimnhE2sug92Zefh0t58xFyzVGXW5EZ1pkyuqlVRq7WuRooPE/CDyYS/0aWtRMmMx0SXsFvsCYqU1MtIH/XKrg3ygXNxwvA5JNj2uSVcEHazs7KpbIrszjck6ekJMBlCjlzndcz3Om484pY+JjzCZj3fLmPIcbedopzpDJKQM5uRmC8ADFK65IdKXBNSVOYJJVWIvbw6ZmJ3YxvKfsnLlyyzoRMAuSGvp0jJUMyXKlopsjEEux3PLLFuladVM6LUOkpRYknQ231PCM5K3jBrGks5YFExlmO8uYRqQOZHWNFgeFUzUsybOIabc+1w5WEAKgU6TUlymMwA+NzszdOkWaVUmu0s+E67e8RwinZEaLdPjU2ZJamli6re3QRm1TxeNtL7c40EwCQh7sZQ5CzCd15+sOoqCVNV6mc4WWhyy0GhbLxMEWkEk5cgxq6Sot3Fup4w7CAkxppPh8N1UGwhldXrMmAst0XQaaW4Xjn0d2UvLU22zKDb1inwLuTYnIUtK7vQkD77kwOnz8rEKATz5xZocPn5WmKpIAK3PuwygkKXu+irz4njDSSJlb7VZAhQI2cHOdoI9n6cZJjiZlI2XiYRo++mFVCqgF+ZsIsYhQmXLl5Bdn2y/ZCclxY1BrNcAedVNmOsKGzaGaCbqYUVjyTcvB7TQYcqDXKT5RbWXYe7DFmj03h3eiG2QkOaVflDfo4vDlmDlDi8LBWTMdp+2JplNOkuzW9rnfjGc7G4xOacwa7I29+B5iNnjODyp9i6gkbRBQYUkr2VtBFLkcm+FwG1fyjhJiIPHBN8oAHO56RHnP5EJ5kMMw8oVhRxmP5ERFPzaHBySABrtxiTG5JpwrORZuIvpA3QKNmbr+z9OZpnzb5QCWUcTwJEZt1opntTCmZ7Kq7KvMxums6kAAgjrGUruxv6xWBsJhNuXOE6vLKV1hBGZ2WlGQJolo0v66kgnr1gXT4PKl1Ut50xZkixI14jZT0iXE8RnyZS0+vd+yoA3baw5mJuyPYWqqJqtVSpkunF28ZyFjwGU+ID4QopvI5SisNAvGe0jd9elAVdlFh8olqKqokhZkybLJdSQijNl4+LlG5xLslhqMM1RIk5eC+Jz8cwt6QIrOzuDsxJr5w6KoyjyvLP2wWuHXuFvlW/QysnEaupVwiBsniL39nkfOB7UzzJc2a7XdXCnqbXvHoWHYHhstXSTikxO8FjnVbf+K/bFZf0dzCsz6JWyJwf3TdDcag3UuLwUu1Bu/qv2MTWVQuWeXZ7KPFe22t/lFKkld9MVCwUa+g4C/GDfajs/Xy2L1FM1raunjlmw9ospIX42iXBaOXU1KypgWVLyAsDoVCgbHrzh1tQk1J44JMXw+QktA7qDl4tmcdNNIbhOEyDToTmYzplhqdFU66c7CK3bCpkhzKkouRNAQN7dYIU+GosuTLV3U5e9dgfZBHAcN4jMY5NKTlhAqRgSmqZVSYUlgMQgub8Bc6CCQwJ52aZTosrutXdnudOdtIkwvEpcuXMSZ3rBGOcIps5J99xv5GK1Bic+ZNnNKlFZbFby7hEAA8Oa+utuEO28iSiseStKaaJrCatlsuttL2uDbnaKtbPdHAUK17hcwBHnbgYM4TPeTPmTqkI+cG1mBVT0B6aRnsbqFaYXUi9yRaBK5A3URlarnwsSbb7KoPIc4Kp2nZZK06ougsMov8AkwJldwyqZkyYG4gAEfAxawqpkS5mZEmTDbjluPKL9CFzyR3qhqoYByFy877XET4ngk2mQGYVudcvK/WOV+NvOa0tciqwc/WJB0uYs4zjBqXl96GWXYAtbpCd4GqdlKmlZCJneomnum5+Ih2G4nlno0186LcjTS8QLJp1fViwBBtwI4iO47iEuY9pUsIg0AtAlbE3SL9ZjEtnYgbmORnVpiecKK2RJ3y8HtwLC/XeOSy/CJC+kdWYBzgbRKTOB5kdcTD1iRagDlEU6qmH2SB8IW5FbWM7pxvHC7WsIcombs1/K0OAhoRVcsbamGWOmp+AEXHHQRCQeUK0FMrPfizekRNa/tsPhtFxl6QzIPqmDA1ZJjE2nSQGlTCWG5vqTGB7Qdrpk5O6Y6CLOP4JNzEyFYhjqvXpHML7Lsl5lQyaMoZDvz3iUldtltuqSCfZ7tLLlYeysD3pJGYjhw1gh2boKqtky5kyYJMiU2bvHW2ZQdkuRm0946edrQcw3BZKJOqKwJ9FJVkQjRyABtxUkAAe8b8NweMY7NrZgQDJJW2SWuwAtYtbQt02HDnETlGGXyOKlL5Y8d2Fp/aORIJWild4+t58wEknjkG5HllHnASpn1VV/eTJkzNeyDwptexUWUcN7xPKlykzZvEy5SV1CWYE+N72J9rwja4NjDTiM45lVlQ5wyd2rEqmYNlFyAWsCL62HAXEc8tRvlnRDRXZepDPwZJUtnmMoIyAAAuQXNgcqnxC3LziadR0yM6sylpaB3VFDEqfZsdidQct77R2XRzAtluigk+Em4zHMfHv4iASIkNOwuxuCeWhNr8tRp6XjmevBHSunb5I5lPT3cLLLBSgBDWzX1a4PslLag7m9oi/smUz/qyUIym4zKRm9nUga79dvi9qN2IIvexG5ygMbmwP5t8Il/sycq3yGxBvoR7V76jmTv8AHfWF8aPkfwGi9TYtW0uneicg0KvdjbTQPa+x5nyhtVhFDiJJUGjqyLArbK58tFcfwtAqRMeWALGwsFAOiqNjci50tfU3+Ol0Tpcw2a4Y7AcSADy36m3zjeHUSjw7RhPp4vtT8mExXsjOpZpSrYS5e6zQC6zOiAe90NiIrKjzCUpDOmWFiSoGg2F+A6R7BS1aTpZpK1O8lOAFZtbHh4t+obcfZm+10ydhuWVIpwZZUlJlhl03BUe+NN99x07Y6i1Fcfbwcex6bqXv5+xk6DFxIlrLmymulyyW9t7+05+6I2pjUgz2c5n9lEW+UC9szHQRNhWKTTJnB5LTJk18+coeXO22kVMFl1ExjLzd3Kl3Z2YaSxufMw6y2NPCQLnYa6sVfQAE7i+nlF/Cp6yJq5paMXSx7zZS2oPSI6Wl7+dMKzSqIDZn3ZeAsOJ3jlLPlic7zz3lh4BawZthm5ACKfFELDsirmWZNVBlsWAJXUX45ekFJuFJJlNMVrMSy2vtl2v5ww0yTZiy5JVpp8bONFlhdTbmBArFJ8zOVZ84uCQBbMRzAhK2klgp0rbyTLTGXkcOHZxcqNrHgTEOIV0xxlIAXkLH5w2bWqCCkvu2GxBO/wAd4IYdKeYAzuqodLBQXa2+UffD+rFzhAuRTyu7zu5DXtlA4c7xK0yWbBFZn2H9IJYnhMpBnsUW97FrsRxvwB6CDVTPoxKTuAoIA1trfneE5XkFDtgCS6apUBe7GnXnr98KIJuNTLnxkwoVPwV8vk9RWVzMOKDjEkqYDwNvKJxLvwhtkJFS1tQPLSECRut/hBBUIHsiOkk6EAQkMomoXaz+kMapTk/pBEyLwu5lgjvHVAeJtFfcn7App8s/WHrD5DSifE7j91yPUCKuM47TSmIRg9uVopYjXvMkCoopjKeI0sbbgqeMLngrjkL1M2WrrLRwzNrxGnxh8zRfbA87R5euI1c2esyYzMw05ADkAI9Co5JdAWAvFbHVsnem8E3it7YPlaB2DYNPqq/u5mkhVzTn+uoNgv8AmYm3lmPCL9XRTGQpLS7tYADQ68jwjQJT/QcOmFT+smGwsbhWayAKTuAczesS8Zawh3apPLM52nxL6XUd0mkmScktRorMNC3kNh0B5xCJglI8uUwExfCWa9lY62tbxEKDoOJhuG0oloZhFwo0HFjtpqONuPOGS5bzZhzMSWe4vrkBAAycBffjqTHnzndyZ36WnwlwSU1E89hcE3stjbqTpqR5XI8uO2wzs5LlKDNNjyB6bE/hFzBMPWTLDEDORvyHP0tEbTGsZzKz8UUaaD3ieA+ZjJqqclb/AAl9SZ6rk3GDpflsMSaCVbSULdR/7awPxzA5by2ZFysATpxtuCIoSe0c4jMJF05gN9vOD9PVrPlZl94FSDuCeB9Y6V8HVi4pK6xivVHM1raMlJvv5v3BXZ3CQqh2AzEaEj2R0B4nnBmZTkjwub/D7LQ/vAvhVSbcBaw+J0hhqRs6st9ATYi/DxKdD6Rpp6OnCO38/Ux1NWc5OTM/iFBLm3WaoVtgyi2p2zDkee3URjsWwlpD2YXXQg62Njof5R6LiEosCu7qCyX99dmU/Z8QYBz5HfSWlMblbGWx4gi6k/YfKOHWg4vHJ6HT62M8d1/lGWw6p9mW5Jf3T9YgG5PAXtbWNNNolraSZSzDrl8DblSNteNjbzBtzjGquViDe4O3loR8zGw7P1Qchhz1HXiNhvr8ecV0upUk/Rl9XpXF+6PLZuK1ct3T6KpdLqxAZgtjbnaxt6QJw0z6ucJTsypMa7gDKpyjb+Uemduq9qKY5RAUnrmOmzrZb+mX0jyoV85iTLzaHNdfdJ0BvsLx6rjtbSR56nuSbfoTYpQLLDtLJCZym97hdGbyBNoKYjiNEkpJdPKXNlGZ2F2J4m5gfWYZMWUrzZyeK5yA3IubnN1vBbA8PpzIlTSin9Ye9J1sLlQLcALgxD4zkqKd4VGapsQMuYXlixYFbLxvFxqKZILPPlspZfCdCVJO9r6aQ/FKdZc0JLVQ4ckHqptb5XiLGMXmzX/Wm7abaj4RV3wKquxuHSplS6yJVt8xNtgN2Yxbr1aURLlTLsxtawsTf5RUwVqiVMIlgoZgykkWsu5MS1lIEcsrktL3bSxa17DlYfbA1nAot7cop1Mp38TuWVWCnlzOWOVrSdRLFgOMNlVGdRLUHMz6X6i0Fe0OAS6VVQsWmEAsQdAfKHdciStWjMZTwvCh1yNjHY1MT3RCu4PrEwmLziHvl/wm/iWIzV22lH+IfhGVvwaYLonqBb7ojerUHYnyEUXqZp2lqPN/5R3xnchfJ4abCkWmrSdkaAvaWlmVMooFKsDdSTBFUHFm/jjjy043P70OibPLZmAVANmHzjWdmaKZJlspYWOpB1g8aWXvlHxJgF2i7WSlldzToA3/ADGtqTtaBvFIIxzbLWLT6JEDyXu49q/E+US4RVNPUd1MJJOXLYXzcgI82kUsyYCy6i8eidjaU4fRza6d/eTLpToeHAzPuHl1hwhLuE9RdkEu02NjD5Rko+eocfrH/wAMfVXr1g92llEUdDKGuiE9css3v8WvHh+KVzTXd3JJa9z5x7jjkzvKCinrtll3twDy7f8AllHxiOqf/k0haH8xNgHEHEuWgZgC5IUcyF+QtfxaW5iLPZelBcE8WtuTqRqdfh84jxJrSyWZQBbMSdh4Bzve5tvuR5Gx2fqMjnow5a6A8D0jyJPC8HsRXyuuTc4kQFI6BfIEqD8mivUEOZcnYTGbNb6qX8PkbD5xLiC516MN+h4/A5TAl6goyTCPYYsw5BhaYPgfF5GNNSajLPDr27nFpw3LHOffsa1EAFgAANABsIGiTkd8oADWaw+tqPwgjLcEAg3B1B5xwp4r8hHpz01NKu3BxRk1dg9sKz2Mx3/yqxVR6b+ZhqIUcSmYsjhsubUgjdb8RY8YKk23gE9T3szMuiqCoPn7RXmTaw9Y59ZQ0qrlv/ptpuU7vhE7TLCWSdRmuTxUK2p9FgXhyHMra/3Sg8tSxUekSVbd4Si3CjwuR7q/4a82awvbYRNNdZSMzWB3bkLCwUeQAHrHLJqTt8L9jogqx3Zg8SAFS/IE6ecXuxLnvcnDLoBoL3N7D1HwIgQ0/M7zPNjpe12Hw4/AawS7CSr1WlzkXU666CxJ97e3rvGHTr+6PQ6jEWvoEf0l0wZJV/rkeqE/dHnlPKlSg0qaCJbMX0Ngx0sGPDYRrv0y4k0tJQltZ+8uDpsEYHfzjzF8cmTVyzSrD/KAfUR9A4qSpngRk4u0KvnI0xUZwUDEMV1NhpoeWnzjlbUgeCTdM7AAX0KkADMPzvFMS5YDaHMR4ST7J9NYfKpJdlZnvtm8W3PQi/xjJxUeTZTcuA12fntTPNefK7xsuVWOuQ9PO4inRYmiVSz3QOATYcATsbdDE9LhFTOQ5Hsjm5DE6LwLnhoBYRBhvZeZPZ7TEWVL0aYfZuNwo42iFTeWXK0kkjldiEx3M8OFDFlXiSLeKw4DUawMmVLPllgW4ed9yepiziEoS7IrF0F8rEZb3OuhiGRhsx2TwsquQFcgged+XWKVLJMtzdBSTSZJJmMyjLcLtmzryihXrPdTMcZgLAm97Ei/2RZxfCTTzFWZMLqCM1uHO0Mq8SXu3lqbhnJ8xaw8rQlzaKfFPBRlU4sNvWOwu7k8HPx/pCi7M9p7OAOAH8V4TNbZU+ZhLMJ4sPJBDw+hOZvQXgomyLvG5S/4TDGduOUeUsx2tqCqXXMx5aCKi528R8Pxa/pBSKtllWFtz/BCz8AGP7ohlOds2YnpcD7YkZhtlPzP3wCI3bo3n4YxeNdmc8wzE0DakXG8bZxfZPl/OK7o31QPgIoQJ7NYNd0lAL4mAJ304n4C5it+k7Fg84SJekqUAigbaaRtcABlidOa36uWxGgGp0H3x43ik4zJjsdySYu8WZtZoHmPbf0c1K1mFtSMbPKug5gXzI3wI+UeKEaxpuxWPNRT1malCcs0c1PHzBF4napJpjtp2j0SVJaYhWYvjUlSLXs402O/MfDnA+Q+V8y66kXvcX1vqul73Ft9PjGwxCmWYFqpBDq4BdRsw4OOZA3HEDpADFKcKJfdpnWxzkErmvqMpA01C68r/DxdXRcZOMvRnr6GspK17GjwLE1dAjGx90m3pD66lKm4+P55dfgY8/wyqaWFvbMNDoVUWNvCp1C7am1+EbPDMcZsqMM99re0I55SVbNTtwy56TT+JDh8oJdnqsgmUfZ3TpzXy4iDNXWLKXMxt04nyEUJdIqsJlstgbg8IEV1TLdyXdb8idB0tHVHXnoaW11d4vwcb0o62pa47/cbXYxMnnIikLyG58zyiaTKYAB2yD6oOpHK42H+X1iIYnITQOg/ygk+sVKjHJY1VGc8CdB6DeOJz+bfOVv8ex2LTdbYRpf75C5mgDwgBVGh0AUdLaD7esZXGcX70mWhuvE/WtwHJYrV+JzZ3hJ0+qNAPOK5my5GpsWB1HW1wtidfLkbwOUtR0uDbT0Vp/NLkrYie7QSx7THxbGwAY6dc2XnfTQjbadg8PMqU81wAznbkBc7+ZPpGQ7M4LNqpiF84RbZmYgniSARpfUrcDYRpu3faSXRU/dy7ZyMqKOcel0mh8yfZflnD1uvjb3Z5l+lDFRPqiAfBLBQci/hLj4Ar6xiVe3GPSexNVRpKz1byTMMyY57wKzgsQDYWJF8oMGsQ7W4eNE/WdFl2X/UB9kert7nl32PIFYnaFl1Aba4v6xre0GK0c7+6pVltv3g8DfAJp8TfyEZepnEnKSGts1rEj9rmREyRSCIWoaU6pPPdobZM1idNDYbxapsVPcBFS4l622RSTozX9tydr/AcYq4XTKyBmPimNlGpAVV1djwvYG14gqnYAyZakqCXsLsbnbMQNbDSMmux0J1kozJrOxuCxvfn53jQYnj7TpaIbDKANBa1uEC5lQNAoy2UDrewzX53N4IYP2aaolzJxmKgUkAbkmE67hG8pZB476fcAF8oFzcaD4nWDXaMUqS0SSoJAAdra5uN78Yo0SCQ9mbKR73PlpziBl+kTiM1tCWbTW3G0GHwO3FZ5JGpZY9mxFhqTvcAnjzhQOm04UkBjpChV9Qv6HswYn3W9YlUn6pH70Qq/VoTMNPaPn/AFjYwJalHI8OVeot98VFpnBuZl+mlvS0WLD6nxMNJtsoG519OUKgG5G18YA+EI6e+Pvjuc67AeQjhdvrDbp5wyhjN+03Lb+UQzAPrN6GLDP+1ETv1+2JAts+XD6phfUquu9rX++PHpm5j16Z4qGpXiGU+q/yjyGcLMY1f8KMv1MitrBOkp8wI5i34fOB6DWD+FptFQRMmE+xfbR6FzKm5mkk6jcyzxKjiOY+I6+p9zLqEE2mdSr62B8LX4j6p6R432jwg5ROQabN0PAwMwPtDUUb5pL2F/Eh1RvMcD1EZaulGaqSL09SUHcT1ys7OZj4QLi11Isc19DrsL8RrvrHJcj6KMzk6mxy2uuota25vpYDiddIq4L+kqlngJUr3T8z7N/2XG3yjTfRpM9by5qsG5kHTlmHptHm6vSSXCtfk9DT6xNVLBlW7RVLLrcZiwCmxaym19NOXrAu8x3sTqWs2uoIIDDzHLgY2VT2XBIKCxAygggmxvfXlc7WiuvY9VVgpcM19QoGpN2NyDqSNTHLPQbdtP1OuHUaaWGjOeFVJLLZcxa3i9hgrADckEjS3SOVFbLU28TEWzWsAFJJJvtcZdt/EI0P/CTZ8xZgDaygXGl7CwsBvqTcmLdJ2Skyx+sYsb3LOQD7V7eHYdII9Km8RbKn1kV3RklM2Z4JSEBlIYKDe5O+fhpcX633tB3BOx5J7yeeN8o4a8T+TBqqxmkpVN2QWvtYCPPu036T2e8umGm2Y6AeQ4x26XRv9WF4Rw6vWN/w+5te0namnoJWSXlBAsqra5PQR4zOxCZVTplTONxLUvbgOCKPNisB6qqeY5eYxZjxP3chFmU15fd3IDMGa3vW0UHoLkx3wikqSwcEneWDQ8OE6NX2ewCnmOomZ2BO2a32CNviXZuhpwol06Xte73c/wCsmLUWQ5I8jkypj3yKzW3KgkAcyRsPOGS01N949crq1VopqgBRawAAA9BHkM06mFKOCoPIWwSgnzgRKIslzqTYX0NrRLS1cymdy41cAXG2nCKuE4o9ObodDvCrq7vCSTGLuzoi1t+pDUFprjICWY2AG5gjRzJtKSr6ZuF9j1tHOz2JrSv3uQOSpUX92/KKGJVZmuWO7G/lCavAKSXzdyTEqgPf86xHQSJgzOljYWPx4D0MMFExAOtoIYfOeTcgXBFiOfx5xVUqQr3StlaZh06/sk8bi5BvrppCi1L7Qugyi4AvYaaawom5eCvk8npC1A+t8h9wjqz+rH4ERWSsXp6xYatQcRGpiSB+jH877x1mOll9Yrf2mgvqPlEb4uOA+f4CJGkWwH+rCyv0il/aZ4Kfn+EMbEGOyn0gHReKPxYDeGmUfr/1ij9If6pjvevyMKwoL4XYmdJLX72WSP8AMhP3NHlmKSSkxhyMboVLynScdpbAtruh8LfI3+ECe2+HBZneJ7D+JT0OsbRzEyniRkpW8aDCjtABBYwXw57WioESNxSBWllGFwRYiMDjuEGU5y6rfQ/cY19JP0iviJDggi94uasmODzxkiakrZso3lzHQ/ssR8tou11JlOm0DnSMWjWzR0nbyul6d5mH7Q19RBBf0n1g4IfiYw5hhhZA2879JVY22UepgNWdrqyZ7U4j/Lp9sAbxy8IZLOns5u7Mx5sSftiMmG3jhMAx2aJZTxXvD0MNCZtexj3nIOsH+1eKXmFQdF0jN9kW7vNNPujTzMQVdQXYseJvGieCGjuMYke6yX3MZZos107O9uAivaM5MuKJJM9l9k2vx4+vCOzJzNoxv8b/AGxGq3iVacRNF2y9RU90Ol10HDc3sNT0MdSjUHT7fxiBGyLbhvb74kFUAt9z+PWIk3ZcVGsl9LD+sOLjp6CIKapDAa6xOzL9b0H84GNfQrNKQ8PkIUTZxzhQqA0yU6jf7ecOEleAEVfpdoX0xef54xqQXkRQOH53iwqrz+UCTXLptC/tFB7y/KJwAZDoOXyjq1CecAziyfXX1EN/tlPrj1gGaD6UvI89jDGqv2T6GAJxxPrfbDGx2X9Y+hhWFB2ZVXBBW4IIIy8DuIqUjidKakmf3sq5lE7unAeYgdTYssyYstSQWNrsCFA5k8os9qJcum7uZKnZ5qm9xa1uI04Q4Tp5JnC42jM1dMUYgjaH0z2MaKcJdZL7yXYTAPGvXmOkZ55RU2MdDVGCdh2ln6Q+e9xAmnm2i5nuILCihWCAdTcRoKkQIqZcQykDC8NLQ6YkRRIx145eORyEM6TCjkKADsWKSQXYADeG01M0xgqi5MaikoRJFt5h3/Z6ecNASv4Jayl4e11MB8Uqcgyjc7xcr6sSxzc/KM+SWJdv69IpsQ0D5x2OGZ0hd50iC1Q9YnRorCYeUPWY/BT6RIF4WPCKkym10h6tM4IfgI6Emn3HPrBY+TtMhBggp8vWB/0eaf8AltDhRzf8M+o/GE68jVrsXrDpHYo/QZ3+H/qH4woXqVb8BMYFWn/l283lj/dHB2dqidRLHnMQffBIPxup/eT7lMIzQOPzb/1H2w9rItFOX2Yn8Zsgf/p+CmJ17JTTp30m/RpjfZL1ib6YvT8/vxyViLBiqGYNriU4QkdTZm4niBtxvCkqKi08Df8Ag9x7VRLUf5Jn/qI7/wAJjjWJ8Eb72EUqvGGVghzg5wxzu7nTmHJFzBeVV5hcBj5KP/mYEm1f7BJpOiqOy0vjVj+BR9syO/8ADMnjUt8ET/6GCKTG4LMPSwHy7ox2pd5du8R1zezmdQdfOWLQvUYNPZ2Smqz3JsbaLvbj0jK1jTLlXvp6RtjN6f8AdEVatEfdderg/wC+GqTE7aMxhlXMlHOhII4cxyjVyaqVVLwSbxHPygJPpwAbBfUf/SBUwsjXGnl/UxtHU7GUodzR1FIyGxENR4r0HaM2yTRmHPiIKKkqbrLceR3i+eDP7lR9Yo1EuCcylZeEV3WEygFPlRTdIOzpcD58mJaGDjHImdLREREgchQrQ4CAYbwapyKQAATueMS1mLhBaXq3PlANSx0F4eEVd/E3LgPMw7ChEFjnc6fb0EMd79BwEcdyTc/0hghDHBocGiO2sS5RANCvEktuWvSI4UAFlZsTpOP5Bget7xZR4mh2XUnnn8j+MSrUnn8jFJZ0PWYOvyiWhplvvj+VMKKuccz6fzjsKh2EFUHfMfKWT82Jh6pb3G+Pdp914rljx/3k/Mwhfgp/gBjSyKLYNuH/AHiP/ExRnYwbFZYCKd2a7MeguSTE5dv2h8FH3QJqaIlyQdD+eQhPIK0MRhMmXJv1bj8B9kaemKqBop5/qXPzaAFHSZWBv8yPmBBmUxOwb/qP9whtqgSdlhO0wpywWWnebBsgFh5cIzuK4vMntmmOSeH54RaxGhztmW9+OpPzYXivIw4A6xKSKbfBpMNrZjy1LPMvYXyyzb1BF4smaTu83/pn7S0CqZABbKPWZ/SHVNSi+HKGJ2ADk/MQnTYK0i1UkW8TzT56f7ozteUN8uY23N9ByHn0i28prguoufZRbgfvGLCUZBA0z89AsocbDgf6X1hpUDdmYdCDrCScy7EiCdbTjUj2dh16wMeWRFJkNBKmx2YuhNx1i6uOI3tJ6RnSI5F72TtNE1bKPEiK8yZLOzQFvHc0G4KL0zLziuyiIbmFCsdDyohAjziOO2hWOh7TDtsOQhkKFaAYrQrQrR20ADSI6I7lhZYBCEdEILDgsACEPEcCw4CADohwjgWOgQhitChW/OsKAAqXHJvUfjCGXkfUfhHIUMB5sNbH1H3Rw/H1P4woUShschtrlJ/eP4xKKkfV/wBTRyFAMlafp7A9bwu8v7v+oj5XhQonuV2IizPopKgmxOZvsB1hJlT2B4j7xLEm443+yFChkMuSZZU6C8wjdraDzHDoIcy6FR5s3FrfYN9IUKEykVZkq+pGnuj8fwgdPp+cKFDQmUXkCK7S4UKLJGFIbaFCgEdAjuWFChALIY7kMdhQhnMkLLHYUMGK0K0KFDAUK8KFAIQMdhQoAO3joMKFAA4GHX8/WFCgAX53jsKFAM//2Q==">
+Certainly! Here's a simple recipe for making a classic cup of hot brewed coffee:
+
+<h4> Ingredients:</h4>
+
+- Coarsely ground coffee beans (about 1 to 2 tablespoons per 6 ounces of water)
+- Fresh, cold water
+- Sugar and milk (optional, to taste)
+
+<h4> Instructions:</h4>
+
+1. Measure Coffee:
+   - Measure the desired amount of coarsely ground coffee beans. A standard ratio is about 1 to 2 tablespoons of coffee per 6 ounces of water, but you can adjust this based on your taste preferences.
+
+2. Water:
+   - Use fresh, cold water for the best flavor. Measure the water based on the number of cups of coffee you want to make.
+
+3. Brewing:
+   - Use a coffee maker, French press, pour-over method, or any preferred brewing method.
+   - If using a drip coffee maker, follow the manufacturer's instructions for your specific machine. Typically, you add water to the reservoir, coffee grounds to the filter, and start the brewing process.
+
+4. Pour and Serve:
+   - Once the brewing process is complete, pour the hot coffee into your mug.
+
+5. Add Sugar and Milk :
+   - Add sugar and milk to taste, if desired. Adjust the quantities based on your preferences.
+
+6. Stir:
+   - Give your coffee a gentle stir to ensure any added sugar or milk is well-mixed.
+
+7. Enjoy:
+   - Enjoy your cup of freshly brewed coffee!
+
+<h5> Additional Tips:</h5>
+
+- Grinding: For the best flavor, consider grinding your coffee beans just before brewing. Use a coarse grind for French press, medium grind for drip coffee makers, and fine grind for espresso.
+
+- Water Temperature: The water temperature should be between 195°F to 205°F (90°C to 96°C) for optimal extraction.
+
+- Experiment: Coffee is a personal preference, so feel free to experiment with the coffee-to-water ratio, grind size, and brewing method to find what suits your taste.
+
+- Freshness: Use fresh coffee beans for the best flavor. Store coffee beans in an airtight container away from light and heat.
+
+Enjoy your delicious cup of coffee!
+<br><hr>
+<h3 class="title"><a id="Lemonade">Lemonade</a></h3>
+<img align="right" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhISEhMVFRUVFRUQFRUVEhUQFRUVFRUWFhUSFRYYHSggGBolHRUWITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0lICUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIARMAtwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAAAQIDBAUGB//EAEEQAAIBAgMFBAgDBQYHAAAAAAECAAMRBCExBRJBUWEGInGBEzJCkaGxwdFSYvAUI3KC4RUzU5Ky8QcWY3OTwtP/xAAaAQACAwEBAAAAAAAAAAAAAAAAAQIDBAUG/8QANREAAgECBAMGBgECBwAAAAAAAAECAxEEEiExQVFhBSJxkbHwE4GhwdHhMhRSFUJDU7LS8f/aAAwDAQACEQMRAD8A9thCEkRFhEiwAIQhABYAxIoiAWEIQAIsSLEMIQhAYQhCABCEIAEISKvVCqWPCAEsJxTdpfRVWLOShJazHugcs/V1ytyznZI9wCNCAc8tZGM1LYk4tbj4QhJEbkcIgiyREIsSEAFhCEACLaJFEQAIsIQAIsSLENBCEIDCEIQAIQhAAnLdqdrBQVB6ec2drY0U0PO3unmW0MQ+IrCnT7zudxB1PtHoBck8hKK02u6ty2nHizR7K7NOLxG+4/dUSGfk9TVafUD1j5c56XM/YmzUw1FKKZ7ozbizHNnPifdkOE0JbTjlViE5ZmLCEJIgRQAiAxwkxBCEIgFhEheACxbyP0o5iG+P0IWC5JeLeR73Q+6G90MVguSwjATyi36QsMdCN8oX6RDHQjd7oYb3j7jCwrjpHVqhQWOgjt8Tk+1u3AncB05c+f6+kjOSirslGLk7Ixe1m2t9ioOQ1+30ml/w92GVU4uqO/UFqQOq0znveLfK3MzmOy2zDjsR3v7mnZqh4NyQeOY8AeJnrai2UpoxbedltRpd1CwhCaCgIQhARFFvEgZMBbwEQCTCJgkQtI1YcvfnHNVB9UFvDT36QFM9B72+0d9BNDQx/Qjt484CkfxfARDTb8QPitvrFdcgs+YoJjhIXFUeqtM+NRl/9DGb1f8Aw6f/AJ2/+ULhYtiY21e1GFwz+jrVbPa+6qPUIB57oNpearW/wl8qt/monF9suyVTE1vTIlbeZQpFM0MiuWZqVFzI6cJTWlNRvTV375Cd+B1eyu0eGxJ3aNUM1t6xDIbXtkGAv/UTYnkWE7DVwQfRYhCMwxrYUFSMwRuu1jp7p6JQfGbqj0dG4ABZ67FiQM2IWnbPxkKM6jT+JG3gOLlxNiLMxaeKOtSgo5CjUqH/ADGovykj0alrtXI/gRF/1b0uJ2Gbcx4o0ma+dsvvPGdqNXxjlcOj1TvWbdUkDkGbRfP6zte1W1qCXU1a1V+RWiUHjdAfdDsRQaqrVahfcbJEaq7iwPrACyqvS18tedLiqk0r7FuZ04N2Or7MbHXCYdKIzI7zt+Nz6zfQdAJryOiLAWkkvtYoCEIQAIQhACOJHRLSYFPaj1hSY0FRqoAKq5IU5i4JGhte3W0lwzsET0vr7q74UXG9bvAW4Xk8BARW9PdrAi3IWy8pMr21mftioymmVtcvuk2vYWJ+kt0zfPnJW0FclEr4jalFFLPVRQLgksBYr6w8RLIE4r/iR2aWvROIQhalJSWGSiot7m5/EM7eJEqqylGLcVdhK6V0drSqBgGVgwOhBuPeI/OeG7E2jWo01anUdN4t3Q2guQSy6E3kv7e63YOwbPPeKn3g3vOZLtWEWk4vzRWquh6t2mwT1sOy02YOLOu6SpNtVy5gnztPI8Rvlm3y+V1bfZmI3eHeN+P+0u4DtXtBWG7VYqBn6YKVNsyxv3/C0s7W2/8AtBVXwyGq59emTRawNiWU72/l1Bz6TNiqtOss0ZWdtns/LjyuVznGWpxtDCM1YBEZyU9Vc7lm3VUA8bn3DpPRBSq7IohKbK1av32FgUpBBbu6FiSdTl3TlOf7ILVw+JqVVp3CqUQubLvZgaevYMwy/FNDEtvFqlRmao53iTYscsgNLZcOlrSlVo046fzfHay9L8BXS23NrYHb9i4p4xVQG4FVQQobeFgw4KBfPoL85u9ptuIiEIwJ6EG58ek8mxCX9XcOdr+kY2JWwDbtMjhprpKiLUG7Spgkkinuq29djayjLMknXrblbXTxdX4dpavnxNGGnmmoyOk2NstsdiCgPdX95VYHRb5IOrEEeRPCdlsOv3lXcA3Ru3AK5cB5aTQ7G7GGEoLS1qHv1m51CM7flGg6CamI2fTuzgWYjOxsD1tznQoUnFRafj76F1aeZlqjU7qnoJMrA6TPq4EsgC1Hp2GRXdPDiGBBmRicRi8Kd56YxFIavSG5VUc2pHJvI+U1WTKs1jqISjszadOum9TN9LixBF+YOYl6RtYkEIhhABohEEWMAhCEAMvboyp/9wfIyxTqgDrraQbePdTo4PwMrEsELA65k57w8gMpTXxHwqbfInSpqUjSbF/hBv1yjGpB0swBByZSAQeYz1nNHGkMGF7g8T9J0eAx6ugIsp0Ycj4znYHtWniW4PRr6r9fPmm+GnEYSVJX4ehyG2+wpa7YZgouT6J+6BxsrAadDz1mGezuJSwNE539QB+V/VuOWfjPVw3I3+MaCOY98lXwFGo73y+FreT+xh+CuB5DtPcwqqK3c3wGUbrFnHsgZ5jjrrMvCYh67qtKhi7BgHK4Z6ykA5Izr6l8s+ROY1nt5qqDqOQJI+se/WU0+yacXfO35fteaYnQu9TzzZ+xMSxcmk1NScldkU2G8CAFYkDTI8hnkLVNqbKq0j3kJWzPvJY7m7vG+WnBtdB5T0Ulb9YPRQg3APQgH4SbwFN6xbv76B/TQStqeMHCLU3WZLEjvWXWyixAzBXu6G+ZNxlNrsk4TG0ywRlRXUWHeBKXR1UCwFri/wCfwna1Oz1EP6REANrFfZ8QDkPDwlilSVFCgBQMgoAUAcrcJGlh6sZd5rTbiSjh0mmn9CVsR7ag+Byy6y9Rqh1LKbgqCPdMHHYgLYggm4yvrzl7ZNIqrd+68OAtmfrNlGv38iV+fTk/B6rS/A0zp3hmb8PwbdLQeEUiMoNdQRyj5uM5ibR2eyN6bD2DjMporjiPP9ZzS2fjFq01deOoOqkZFT1Byk5+Up06e5VJGS1RcjlUXU/zL/o6x7itYvQiQiGNjhIATHAx2FcliyIGODQsMztv1CqAj8QHzlfDsSvdsDyMm2/nTH8Q+srYZD9Z5/H1qlPF2V7ZV6vVdTbRinT15mdjagJsUKsMjYybZrFSbLvAjMafGWMQBUckjJRY9ecbXxgUbqWvfll5Th5HGq686lkm7OyUpW00Vrc1s76m5zzQUFHfq7IvCrUK5BV4W1sPfK4FTi4B/hWUf2hyPWOZ5yp6TdNiM4q3akZ2spvxnl/4/rwIxotX28r+ppYmg5HrX8rfLWVxtB6W7lcA5qc15ZcpFTxJt3SbayX0gbJhK4YqLnmpSlCfV3Xhd3fnoTytK00mvAuYXFq92Um9ySOOfzEuU7niB8Zz9Cq1FyPZOo6c/GbOFxK316z0HZuLVWLjLSSeq26X389tTFiqWV3jqnsWtw8d74CVMWASNb6TTLSjiU4zqVY92xmT1Mqphhe5+8jq1vWUHIBctBnvcBlwliq8zKL3Z/FfhecatONNqMdL39GbqKcneXA7bBC1NP4RJpVwjdxfAfKTb89Ilocx7jva8R8v94yuvdvxBDe45/C/vjWqWImftLbFKlvh3swW4Xi29koXmbySRE1gYSurwhYVybdgEj4RXJDQsW0LwvADO22n7o9CD8ZDs83Alza2dJx0mVgmsBOJj+7ioTf9vo3+TVRd4NdSK59ESNc/nnMi02blWZNL3K+czCDx1nlMbooLksr8V+TqUd311LeDol1I4g68/wCs0sZs/eVbZHUny4Svsyu2nATWaqOJE7PZuHw9Sg21uknw25a/K63Mlec4zOefAst7gAaa8JAD5zW2oykfLlMemlpxO0KFOhVywfvyVjTSnKcbsnrDfXqM5FhnupHEfWT0hkZTwWrn9cZso1ZOpTqPdpp9Vw99CDisko8rG9gcVvL1GRkxrDjMWnV3Te9otTatshbxndj2lThFKo9TJ/TSk+6ibHJkSJi4I3L/AMQA+8v1sVvLYH4yjgEvUC9b+6cvEV4VsRHJx082a6MXCDudrRNlXwHyjxUjUXIRwSe1OIhj5+X1nnna1WfaNCkLi7UQbXF1DhmHUWvPSadO4vzMoLTWpWZ90dzuhrC+mYHwieuxOLsWlhJLQjIE14m8Igow9DI6EgLCKIClHhYXBIp7QHcbwmNgDNzaHqN4TnsI9jOX2hG8oPxLqT3RoY3Dbyhl9Zcx15yg9EON4ZHiOs1abyGtSz3hx1HPrORi8GpPPbR/yXhtJdVt1XgaqVW2nl+DKosQCJDXqMNCdbzWWiDI6uDBnLjhcRThaLTRo+LFspVa4awF+Z8ekYFlv9ktHVmCiU1sPUm5VKrykozS0iVMQ+4koLiwFsMzxMTHVLyrhqJc2EhGo3bJppZe+psp0IqGafiWUctBaR3je26B53+0mqfu+6NeJkAP3kXlpy1V3x5flsrlUlL+OiHOgOhkuwUJqknmR8FlciaOyfYP/U+dhOj2e41q8XZJrXTZ7eW5lrNxg18jrAIpW+QiPUAHWSUVsM+M902ccZiB3d0G18r8hxt1lbZuCFFNwXtvM2ZJPeN9TLxES0E9LCtrcYRCPIhC4xvphA1xIaSX1k3oRCyFqNGJEeKgiLSEkCxaDKm0KncM5wZP8Z02OS6HwnPV6eh5THjI3jpwJRdmXaLSwJSoGXKYmOOpYKUkTJLJEjMjOnF8CSk0VXQyCrRFrmXisjrJ3T4GY6uHhlehbGbuclijdjNHCp6Onf2m0lRKO9U+MuO2duWk83SqfDi5re1l4vj8kdiu72gvmRspc8zHfshuD0IlrCgZk5eUXEaZSylSg6TnN3buZJTd7IzsSm7kM5Z2TonV7/H+kr1DLmx19r8PzJv+vGbOxk3XzJe7/opxL7h1tKlbxkjNaQiuCAVvnnmLfOA6z3VuZzAatGHE5x5CxhtGJkgqRZCVEIWC5auJHUqWjikFSLQCFcRJAxiNR5SQCF0BWxV90zJAm5iB3T4TFUZzPXeiY0TU0EmAjFEkWZNCwcIwiPhaQGR7sVkj7RZBq5JM5o0dyqw/VolQd6a+1MIWs6+suo5j7zNVlaeZxOEcG6N7a3j1Vvt73Ogqua0/kyMQeTLTHjHigW0HmZjhgZu1/Jb/AI+oOoii1O9gMzNrZ2G3FReufUwo4ZV015yVW71Mfm+89R2fQ+C030VuV36mKrPNojWKyJ6N+Mni2no7mQrjD9YegEixW0qVPJnAPLU+4TOq9pMOPaY+UzTxuHpvLOcU+V1fyLoYarNXjFs1yghMan2koc2/yxJH/EcJ/uR80Wf0eI/sZvuY2ivM3jnp3jaYI1mvgZSW8S8LwiGNreqfCYinMzaq6HwmFT9czHi3bL4kocS2okqxgj1lDJD4kWJIjFgIkIhoW8rVcGjG5UX5jKWY2VVIxmrSSfirkk2tiBcKo0H1jyI+MMjGEY6RSQOV9yMiNHr0/H6GSNG0VvUTofoZbH+S8V6iXHwZqFes5fb22TmiGyjInif6Tp8RkrHoflOAxyX0mXt/GVKahSi7KV789LafU19m0YSm5SWxkYmuSZSqVJdqU5D+y855+DjFWO3UnJOyRWFYwjKwsegiy5IrWIsexftYJsFY+VhHGueQ98zMPtbfBcIxAsGsNL8bS9XpC57wB14XnqaeIlVjmhK/grc7WvflzPPzpZHaSt9fQnDk8B748NM+mm6cteZYknxhtDGik1NicmO4R05+RlkMXaN6mmtvN2424+pH4OaVo+/Uv1NDMWnrNhybHwmDQe5B6fGTxrtl+f2K6fE0EkgEjpySUcA4jrQixJEkJCLCRsAkSLEkGO4towiPiQBsjIjKH94v64SQxmG/vR4GWU134+KBPc1DmCJ57jXNN2Q8CRO9ect2mwAa9RdbZjn/AFlfbOCeIpqUVdx9HvbrszX2dWjCo4z2fqYTlG8Yz0Y5zMq1CCZVbGEcZ5WNBvZnpLW4m22GU62iTnMRtRgMjCXRwlVrRkHY9axe1EpkkC7AZsOPhM7aSrWCs5IDWZXU2ZSNc+IvwMr1hRGdSuvgl3+w+Mp4vbtJAFpqTYmxexzPQZfOani8TNS+I0tdFo7eKV+F/wCVne2xyqeFWmRNvnsvNmngkZBv1ah9GPa0L29kCc52h22a1TLJRko5CZe09tVKpuzE+fymQa+esrUbwcEtHq+bfXey5Rvpu23qb6dBU3nlq/T99dOh7Xsmv6TD03PFBfxtYzBwNT5xOzG0AMNTUnOx+JJEq4Cr3mH5j856TFtunTk/d0jze05pc/uzpKLZCTAyrh2yEsCK+hWPiiIDFEjcYGEDCDASEdEkWAkCI6JACNpHh/Xv0Me8rioFa5llHWohPYvs2UyNpUiwMvHELzlWtWB4zpNXIJ2OC21s9wSVnJ4rFOhO8h8vtPVsUU4n4XmLtDZtJvZv/LMFXAQm78TdSx1SCsmeZ4naic7HqLQnVYzssjZhSP5TCVrApKxf/iTJqtQmUq1SVq21V5N/kP2mbWxtVskpN4nKcOlhaj4HaqYimt2Xa1eZtbGd7dXMnh9Y5djYir63dHJfvN3ZfZcU7Ern1nSpYRLc5tfHK1om/wBnKzejW50FpqYJwzsQeOY+sp4LDsq2t5SoS9OoKi6DJhzE6VeGakl4HEv3jvcIcpZEzNm4pXUMp+4PIzRDTGnoSJFjxIg0kBiuA+EbCO4CwhC8VwCES8QtDMAxzMrGV1Lbt9NfHlK/aDboogolmqHRb6fmPSYOArPq4NzmTzMuwivPMQnsdOpW0jemToPeZWw+KyzUiaOHrqdDOmVplUYJj7VvCKdmn8bfD7TSAEYXAkkOxQ/YGt65+EJaq11HGEYiCr2dpn2B7oz/AJeT8InVGmI005U6ceRbnZzP9koui5+EDszpOk9DFNKGREbnPJgAOEr4jAg8J0r0ZUrYflG43EczUwjU+9TNj4ZHxElpbcCj96N38wzX7ibbUL6zO2hg1IItczPUwylqPMWcLtBKgBRgQeRBlwVJyKbDz7vcP5biWUwFVfVqtMjwsuH2/N/oPOdQrxwacnVbFLezjzW/1jKeJxnF18llfwJcWvJ/gefp6fk68vGNU6zmHfEEZufLKZ9TDuT+8Zj1J3pGVKXXy/8AAze7nU4vbFKmO84vyHeJ8hOZ2x2iquCtBSv5m1/lH3lvC7LX9ZzRpbNUcBJww0nuNzsef7HwDtUZqyksTfeubk8rzrsLszLJj4HOa67OF7gSytC0306diDdyrSSwFxeOV0B0I8pfWnGVaQ4zQiNiD0gOQuDKdepU0sPG0s0aN20ymkmHHKTQHPpXJyKedvpCdAcIvKELhYSttqitxckjKwU/WMTb9EmxLDqRl8CZy1r52l3D7KZxcmwnjIdu42c0oRi+ln/2+uh2pYKhBd5vzOto1lYXVgw6EGSTkxshkN1cgj9cJcw21alOy1lJHCoMx4Ny8Z3cN2nm7teGR9Xdeey+Ziq4Vb05Zvo/2bzjKVmkT4ktoD+uMPRtznXtYxJjiIjUgRAgjWN3fE+cQDGpgcJAychLi0ukUUOUi1cCqmGB1g+EWWvQxxoiRygZ9TDLoJX/ALON7k+U1VpAm4khpxZUSMmhghwHnLKYQ/iMthbaRQpGcMqArHDtwPwkJp1R+E+AI9+cvOZGCY7CKo9JxAHgf6Rud85aqLeNCc5NIQxHtnaXaVUGVqlKRpTOgjA0CwhKy0TzEIWA5yqxL/zfedPTQboy4QhPGdkd7E1r67erOvjNFGxz206hVsiRmYuBqnfAvly8QIsJz1OSxTSf+Zfcs/0/kaa91woyHKXoQnsuzm3CSfB/ZHLr7oURIQnRKB4hCEBiPEOYhCDEMo6mTmEJAZG8IQiAhqRkISQhpkiQhJIB5XKQCLCAD0hCEAP/2Q==">
+Homemade lemonade is a refreshing and classic beverage, perfect for quenching your thirst on a hot day. Here's a simple recipe for making lemonade:
+
+<h4> Ingredients:</h4>
+
+- 1 cup freshly squeezed lemon juice (about 4-6 lemons)
+- 1 cup granulated sugar (adjust to taste)
+- 5-6 cups cold water
+- Ice cubes
+- Lemon slices and mint leaves for garnish 
+
+<h4> Instructions:</h4>
+
+1. Make Simple Syrup:
+   - In a small saucepan, combine 1 cup of water and sugar.
+   - Heat over medium heat, stirring frequently, until the sugar completely dissolves. This creates a simple syrup. Allow it to cool.
+
+2. Squeeze Lemons:
+   - While the simple syrup is cooling, squeeze lemons to obtain 1 cup of fresh lemon juice.
+
+3. Combine Ingredients:
+   - In a large pitcher, combine the fresh lemon juice and the simple syrup.
+   - Add 5-6 cups of cold water to the pitcher, depending on how strong you prefer your lemonade. You can adjust the water-to-lemon ratio to suit your taste.
+
+4. Mix Well:
+   - Stir the mixture well to ensure that the lemon juice, simple syrup, and water are thoroughly combined.
+
+5. Taste and Adjust:
+   - Taste the lemonade and adjust the sweetness by adding more sugar or diluting with water if needed.
+
+6. Chill:
+   - Place the pitcher in the refrigerator to chill the lemonade.
+
+7. Serve:
+   - Serve the lemonade over ice cubes in glasses.
+
+8. Garnish :
+   - Garnish with lemon slices and mint leaves for a decorative touch.
+
+9. Enjoy:
+   - Refresh yourself with a glass of homemade lemonade!
+
+<h4> Variations:</h4>
+
+- Sparkling Lemonade: Add sparkling water or soda water for a fizzy version.
+
+- Berry Lemonade: Add a handful of fresh berries (strawberries, blueberries, raspberries) for a berry-infused lemonade.
+
+- Herb-Infused Lemonade: Infuse the lemonade with fresh herbs like basil or thyme for an herbal twist.
+
+Feel free to get creative and adjust the recipe to suit your preferences. Homemade lemonade is a versatile drink that you can customize to your liking!
+<br><hr>
+<h3 class="title"><a id="Juice">Fruit Juice</a></h3>
+<img align="right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDrp5foPIlJlkuycsDjonuOIc4g_P8HfQ0Vg&usqp=CAU">
+Certainly! Here's a basic recipe for making a refreshing fruit juice. You can use a variety of fruits based on your preference.
+<h4> Ingredients:</h4>
+
+- 2 cups mixed fruits (such as oranges, apples, berries, pineapples, or any fruits of your choice)
+- 1-2 tablespoons honey or sugar (optional, to taste)
+- 1-2 cups cold water or chilled sparkling water
+- Ice cubes 
+- Mint leaves for garnish 
+
+<h4> Instructions:</h4>
+
+1. Prepare the Fruits:
+   - Wash and peel the fruits as needed. Remove seeds or pits.
+
+2. Juicing:
+   - Cut the fruits into smaller pieces, if necessary, and place them in a blender.
+   - Blend until you get a smooth puree.
+
+3. Strain :
+   - If you prefer a smoother juice, you can strain the puree using a fine mesh sieve or cheesecloth to remove pulp. If you enjoy more texture, you can skip this step.
+
+4. Sweeten :
+   - Taste the juice and add honey or sugar if desired. Adjust the sweetness according to your preference.
+
+5. Dilute:
+   - Transfer the fruit puree to a pitcher and add cold water or chilled sparkling water. Stir well to combine. Adjust the amount of water to achieve your desired level of concentration.
+
+6. Chill:
+   - Refrigerate the juice for at least 1-2 hours to chill.
+
+7. Serve:
+   - Pour the chilled fruit juice into glasses over ice cubes if desired.
+
+8. Garnish :
+   - Garnish with mint leaves for a fresh touch.
+
+9. Enjoy:
+   - Refresh yourself with a glass of homemade fruit juice!
+
+<h5> Tips:</h5>
+
+- Experiment with different fruit combinations to find your favorite flavor.
+- Citrus fruits like oranges and lemons add a zesty and refreshing twist to the juice.
+- Adjust the sweetness and dilution to suit your taste preferences.
+
+Homemade fruit juice is a great way to enjoy the natural flavors of fresh fruits. Feel free to get creative and tailor the recipe to your liking!
+<br><hr>
+<h3 class="title"><a id="Mojito">Mojito</a></h3>
+<img align="right" src="data:image/jpeg;base64,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">
+A Mojito is a classic Cuban cocktail that's known for its refreshing and minty flavor. Here's a simple recipe to make a delicious Mojito at home:
+
+<h4> Ingredients:</h4>
+
+- 10 fresh mint leaves
+- 1/2 lime, cut into 4 wedges
+- 2 tablespoons white sugar, or to taste
+- 1 cup ice cubes
+- 1 1/2 ounces white rum
+- 1/2 cup club soda
+- Lime wedge and mint sprig for garnish
+
+<h4> Instructions:</h4>
+
+1. Muddle Mint and Lime:
+   - Place mint leaves and one lime wedge into a glass.
+   - Use a muddler to crush the mint and lime to release the mint's flavor and the lime's juice.
+
+2. Add Sugar:
+   - Add 2 more lime wedges and the sugar, and muddle again to release the lime juice. Do not strain the mixture.
+
+3. Fill the Glass with Ice:
+   - Fill the glass almost to the top with ice cubes.
+
+4. Pour in the Rum:
+   - Pour the rum over the ice.
+
+5. Top with Club Soda:
+   - Fill the glass with club soda, stirring well to mix.
+
+6. Garnish:
+   - Garnish with a lime wedge and a sprig of mint.
+
+7. Serve:
+   - Stir, taste, and add more sugar if desired.
+  
+8. Enjoy:
+   - Enjoy your homemade Mojito!
+
+<h4> Tips:</h4>
+
+- For a sweeter Mojito, you can dissolve the sugar in a little water before adding it to the glass.
+- You can adjust the amount of mint, lime, and sugar according to your taste preferences.
+- Use a highball glass for serving to showcase the vibrant colors of the drink.
+
+Mojitos are perfect for warm weather and make a delightful cocktail for any occasion. Cheers!
+<br><hr>
+<h3 class="title"><a id="Milk">Milk</a></h3>
+<img align="right" src="data:image/jpeg;base64,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">
+Milk is a versatile and nutritious beverage that can be enjoyed on its own or used in various recipes. Here's a basic guide on using and enjoying milk:
+
+<h4> Drinking Plain Milk:</h4>
+
+<h5> Ingredients:</h5>
+- Cold milk
+
+<h4> Instructions:</h4>
+1. Choose the Milk: Select the type of milk you prefer, such as whole milk, skim milk, 2%, or a plant-based milk alternative like almond or soy milk.
+
+2. Serve Chilled: Pour the desired amount of cold milk into a glass.
+
+3. Enjoy: Sip and enjoy the milk on its own or with your favorite cookies or snacks.
+
+<h4> Warm Milk with Honey :</h4>
+
+<h4> Ingredients:</h4>
+- Cold milk
+- Honey 
+
+<h5> Instructions:</h4>
+1. Warm the Milk: Heat the desired amount of milk in a saucepan or microwave until it reaches your preferred temperature.
+
+2. Add Honey : If you like, add a teaspoon of honey to the warm milk for sweetness.
+
+3. Stir: Stir the honey into the milk until it dissolves.
+
+4. Enjoy: Sip the warm milk slowly and savor the comforting flavor.
+
+<h4> Making Hot Chocolate with Milk:</h4>
+
+<h5> Ingredients:</h5>
+- Cold milk
+- Cocoa powder
+- Sugar
+- Vanilla extract 
+- Whipped cream 
+
+<h5> Instructions:</h5>
+1. Mix Cocoa and Sugar: In a small bowl, mix 1-2 tablespoons of cocoa powder with sugar to taste.
+
+2. Heat the Milk: Heat the desired amount of milk in a saucepan until it's warm but not boiling.
+
+3. Add Cocoa Mixture: Add the cocoa and sugar mixture to the warm milk. Stir well until the cocoa dissolves.
+
+4. Add Vanilla : If you like, add a splash of vanilla extract for extra flavor.
+
+5. Serve with Whipped Cream : Top your hot chocolate with a dollop of whipped cream if desired.
+
+6. Enjoy: Sip and enjoy your delicious hot chocolate.
+
+<h4> Making a Milkshake:</h4>
+
+<h5> Ingredients:</h5>
+- Cold milk
+- Ice cream (vanilla, chocolate, or your favorite flavor)
+- Sweetener (sugar, honey, or syrup)
+- Optional: Fruit, chocolate chips, or nuts for flavor
+
+<h5> Instructions:</h5>
+1. Blend Milk and Ice Cream: In a blender, combine cold milk and a few scoops of ice cream. Add a sweetener to taste.
+
+2. Add Flavors : If desired, add fruits, chocolate chips, or nuts for extra flavor and texture.
+
+3. Blend: Blend until the mixture is smooth and creamy.
+
+4. Serve: Pour the milkshake into a glass and serve immediately.
+
+5. Enjoy: Sip and enjoy the indulgent treat!
+
+Milk is a versatile ingredient that can be enjoyed in various ways, whether it's plain, warm, in hot chocolate, or as a delicious milkshake. Adjust the recipes to suit your taste preferences and dietary needs.
+<br><hr>
+<h3 class="title"><a id="Martini">Martini</a></h3>
+<img align="right" src="data:image/jpeg;base64,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">
+The classic Martini is a popular cocktail known for its simplicity and sophistication. Here's a basic recipe for making a classic Martini:
+
+<h4> Ingredients:</h4>
+
+- 2 1/2 ounces (75 ml) gin or vodka
+- 1/2 ounce (15 ml) dry vermouth
+- Ice cubes
+- Lemon twist or olive for garnish
+
+<h4> Instructions:</h4>
+
+1. Chill the Glass:
+   - Place the martini glass in the freezer for a few minutes to chill.
+
+2. Prepare the Ingredients:
+   - Measure the gin or vodka and dry vermouth.
+
+3. Fill the Shaker with Ice:
+   - Fill a mixing glass or cocktail shaker with ice cubes. This is where you'll mix and chill the ingredients.
+
+4. Add Gin or Vodka:
+   - Pour the gin or vodka over the ice in the shaker.
+
+5. Add Dry Vermouth:
+   - Add the dry vermouth to the shaker.
+
+6. Stir or Shake:
+   - You have the option to either stir or shake the ingredients, depending on your preference. Stirring generally results in a slightly smoother drink, while shaking introduces more aeration and can be a bit colder.
+   - If you choose to stir, use a long spoon and stir for about 30 seconds.
+   - If you choose to shake, place the cap on the shaker and shake vigorously for about 10-15 seconds.
+
+7. Strain Into Glass:
+   - Remove the ice from the chilled martini glass.
+   - Use a strainer to pour the mixed ingredients into the glass.
+
+8. Garnish:
+   - Garnish the Martini with a twist of lemon peel or an olive. To create a twist, hold a piece of lemon peel over the drink, skin side facing the liquid, and give it a twist to release the citrus oils.
+
+9. Serve:
+   - Serve the Martini immediately while it's chilled.
+
+<h5> Tips:</h5>
+
+- Experiment with the ratio of gin (or vodka) to vermouth to find the balance that suits your taste. Some people prefer a drier Martini with less vermouth, while others enjoy a slightly wetter version.
+- You can also choose to garnish with a cocktail onion for a "Gibson" Martini.
+
+The Martini is a classic cocktail with a timeless appeal. Feel free to adjust the ingredients and method to create a Martini that suits your personal taste preferences. Cheers!
+<br><hr>
+<h3 class="title"><a id="Iced">Iced Tea</a></h3>
+<img align="right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfdgIiKzcM-smSslDh0otiWv7uY7vwvlqZXQ&usqp=CAU">
+Iced tea is a refreshing and versatile beverage that can be made in various flavors. Here's a basic recipe for classic homemade iced tea:
+
+<h4> Ingredients:</h4>
+
+- 4-6 tea bags (black tea, green tea, or herbal tea)
+- 4 cups water (for boiling)
+- Sweetener of choice (sugar, honey, or syrup), optional
+- Lemon slices, mint leaves, or other flavorings, optional
+- Ice cubes
+
+<h4> Instructions:</h4>
+
+1. Boil Water:
+   - Bring 4 cups of water to a boil in a pot or kettle.
+
+2. Steep the Tea:
+   - Place the tea bags in a heatproof pitcher.
+   - Pour the boiling water over the tea bags.
+   - Let the tea steep for 5-7 minutes. Adjust the steeping time based on your preference for strength.
+
+3. Remove Tea Bags:
+   - Once steeped, remove the tea bags from the pitcher.
+
+4. Sweeten :
+   - Add sweetener to the hot tea if desired. Start with a small amount, taste, and adjust according to your preference. You can use sugar, honey, or any other sweetener of your choice.
+
+5. Cooling:
+   - Allow the sweetened tea to cool to room temperature. You can speed up this process by placing the pitcher in the refrigerator.
+
+6. Flavoring :
+   - Add lemon slices, mint leaves, or other flavorings for an extra kick of freshness. Stir to combine.
+
+7. Refrigerate:
+   - Refrigerate the tea until it's well chilled.
+
+8. Serve Over Ice:
+   - Fill glasses with ice cubes.
+   - Pour the chilled tea over the ice.
+
+9. Garnish :
+   - Garnish with additional lemon slices or mint leaves if desired.
+
+10. Enjoy:
+    - Stir, sip, and enjoy your homemade iced tea!
+
+<h4> Variations:</h4>
+
+- Peach Iced Tea: Add peach slices or peach syrup for a fruity twist.
+  
+- Minty Iced Tea: Steep fresh mint leaves along with the tea bags for a mint-infused flavor.
+
+- Half-and-Half Iced Tea: Mix half iced tea with half lemonade for an Arnold Palmer.
+
+Feel free to get creative and experiment with different tea varieties and flavorings to customize your iced tea to your liking. It's a versatile drink that's perfect for warm days or any time you need a refreshing pick-me-up.
+<br><hr>

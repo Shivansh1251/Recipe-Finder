@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Meal For Your Ingredients</title>
+  <link rel="icon" href="C:\Users\hp\Downloads\recipe-book.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href = "style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .modal-heasing{
+      position: relative;
+      top: -285px;
+      left: 450px;
+    }
+    .buttons{
+      padding: 20px;
+    }
+  </style>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body background="C:\Users\hp\Downloads\Images\Free-blue-gradient-pattern-background-from-Fotor.webp">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:cadetblue;">
+    <div class="container">
+      <a class="navbar-brand" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_mainpp.html">Recipes</a>
+      <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation"></button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-0 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\Home_pp.html" aria-current="page">Home </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppVeg.html" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Veg</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppVeg.html">Dal Makhni</a>
+              <a class="dropdown-item" href="#">Shahi Paneer</a>
+              <a class="dropdown-item" href="#">Manchurian</a>
+              <a class="dropdown-item" href="#">Rajma</a>
+              <a class="dropdown-item" href="#">Chana Masala</a>
+              <a class="dropdown-item" href="#">Raita</a>
+              <a class="dropdown-item" href="#">Butter Naan</a>
+              <a class="dropdown-item" href="#">Missi Roti</a>
+              <a class="dropdown-item" href="#">Jeera Rice</a>
+              <a class="dropdown-item" href="#">Curry</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Non-veg</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Sorry!!!</a>
+              <a class="dropdown-item" href="#">Vegetarian only</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppStarters.html" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Starters</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppStarters.html">Fries</a>
+              <a class="dropdown-item" href="#">Sandwich</a>
+              <a class="dropdown-item" href="#">Burger</a>
+              <a class="dropdown-item" href="#">Pizza</a>
+              <a class="dropdown-item" href="#">Wrap</a>
+              <a class="dropdown-item" href="#">Honey Chilli Potatoes</a>
+              <a class="dropdown-item" href="#">Spring Roll</a>
+              <a class="dropdown-item" href="#">Aloo Tikki</a>
+              <a class="dropdown-item" href="#">Dosa</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Deserts</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppDesert.html">Ice-cream</a>
+              <a class="dropdown-item" href="#">Cakes</a>
+              <a class="dropdown-item" href="#">Brownies</a>
+              <a class="dropdown-item" href="#">Muffins</a>
+              <a class="dropdown-item" href="#">Cookies</a>
+              <a class="dropdown-item" href="#">Fruit Custard</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppDrinks.html" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" 
+              aria-expanded="false">Drinks</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppDrinks.html">Tea</a>
+              <a class="dropdown-item" href="#">Coffee</a>
+              <a class="dropdown-item" href="#">Lemonade</a>
+              <a class="dropdown-item" href="#">Juice</a>
+              <a class="dropdown-item" href="#">Mojito</a>
+              <a class="dropdown-item" href="#">Milk</a>
+              <a class="dropdown-item" href="#">Martini</a>
+              <a class="dropdown-item" href="#">Iced Tea</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" aria-current="page" style="color:cadetblue;">Content by:- @Shivansh Garg yooooo!!! Welcome to webpage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="https://myaccount.google.com/" aria-current="page">Log In </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\Feedback form.html" aria-current="page" >Feedback </a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class = "container1">
+    <div class = "meal-wrapper">
+  <h3 class = "title">Introduction To Recipe Finder</h3>
+  Welcome to our culinary adventure! In the vast world of flavors, finding the perfect recipe can be a delightful journey. Whether you're a seasoned chef or a kitchen novice, our recipe finder is here to make your cooking experience a breeze.<br>
+Embark on a gastronomic exploration as you navigate through a treasure trove of diverse recipes. From quick and easy weeknight dinners to indulgent desserts that make every moment special, our recipe finder is your compass in the kitchen.<br>
+Are you in the mood for a comforting bowl of soup on a chilly evening or craving a show-stopping dish for a festive gathering? Let our recipe finder be your guide, offering a collection of tried-and-true recipes that cater to every taste and occasion.<br>
+Discover the joy of creating delicious meals from scratch, and let the aromas and flavors transport you to culinary bliss. Whether you're seeking healthy options, vegetarian delights, or indulgent treats, our recipe finder is designed to inspire and simplify your cooking adventures.<br>
+Get ready to unleash your inner chef, experiment with new ingredients, and savor the satisfaction of a well-cooked meal. Let the culinary journey begin!<br>
+<a href="#" data-toggle="modal" data-target="#myModal" class="modal-heasing">Recipe of the day</a>
+
+<br>
+<!-- Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog custom-width">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Recipe Of The Day</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <!-- Content will be dynamically inserted here using JavaScript -->
+        <h4>Firecracker Dogs:-</h4>
+        <img align="right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyX9MUaloZGZzKAjC2h9zVlLH6HMEJSR5vOg&usqp=CAU">
+        <h5>Ingredients:</h5>
+
+16 bamboo skewers,16 hot dogs,1 can refrigerated breadstick dough,Cookie sheet,Parchment paper,Star-shaped cookie cutter,16 slices of Colby cheese, 1/4-inch thick
+<h5>Directions:</h5>
+Insert a bamboo skewer through each hot dog, leaving around 1 and 1/2 inches sticking out of one end.
+Wrap a section of breadstick dough around each hot dog in a spiral pattern until you get to the top. The refrigerated bread dough should already have perforated sections that you can easily separate for each hot dog.
+Arrange wrapped hot dogs on a cookie sheet lined with parchment paper, and bake in oven for 20 min. Allow to cool for around 3 min.
+Cut out star shapes from 1/4-inch thick slices of Colby cheese using a cookie cutter. 
+Push exposed end of each skewer into a cheese star to complete the Firecracker Dogs.
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+  </body>
+  </html>

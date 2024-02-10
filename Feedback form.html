@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="icon" href="C:\Users\hp\Downloads\recipe-book.png">
+    <style>
+        *{
+            font-family: lucida calligraphy;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            color: transparent;
+            font-weight: 500;
+            font-size: 60px;
+            position: absolute;
+            bottom: 58px;
+            left: 570px;
+        }
+        /* Popup window */
+        .popup {
+          position: fixed;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+    
+        /* Popup content */
+        .popup-content {
+          background-color: #fefefe;
+          margin: 15% auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 50%;
+        }
+    
+        /* The close button */
+        .close {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+    
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        #feedback{
+            width: 700px;
+        }
+        #sumbitBtn{
+            cursor:pointer;
+            box-sizing: border-box;
+            border: #000 2px solid;
+            font-size: larger;
+            
+        }
+        p{color: transparent;}
+        #rating {
+            margin-bottom: 20px;
+        }
+        #rating input {
+            display: none;
+        }
+        #rating label {
+            position: relative;
+            float: left;
+            width: 20px;
+            cursor: pointer;
+        }
+        #rating label:before {
+            content: '★';
+            color: #ccc;
+        }
+        #rating input:checked ~ label:before {
+            color: #ffc107;
+        }
+     </style>
+    
+</head>
+<body style="background-image: url(https://images.ctfassets.net/co0pvta7hzrh/6fZXuPFqlymLdhQxPcokVY/0f71fd678fad9ff2ecc1372595cba6da/website-design-feedback-form-template-hero.jpeg)">
+    <p>Created by Shivansh Garg.</p>
+    <button id="myBtn"><h1>give feedback</h1></button>
+    <div id="myPopup" class="popup">
+     <form class="popup-content" id="feedbackForm">
+        <span class="close" id="closePopup">&times;</span>
+        <h2>Feedback Form</h2>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name">
+    
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name">
+    <br><br>
+        <label for="feedback">Write Your Thoughts:</label>
+        <textarea id="feedback" name="feedback" placeholder="Write your feedback..." style="height:100px"></textarea>
+    <br>
+    Ratings:-
+    <div id="rating">
+        <input type="radio" id="rate-5" name="rating" value="5">
+        <label for="rate-5"></label>
+        <input type="radio" id="rate-4" name="rating" value="4">
+        <label for="rate-4"></label>
+        <input type="radio" id="rate-3" name="rating" value="3">
+        <label for="rate-3"></label>
+        <input type="radio" id="rate-2" name="rating" value="2">
+        <label for="rate-2"></label>
+        <input type="radio" id="rate-1" name="rating" value="1">
+        <label for="rate-1"></label>
+    </div><br>
+        <input type="submit" value="Submit" id="sumbitBtn">
+        
+     </form>
+    </div>
+    
+    <script>
+     var popup = document.getElementById('myPopup');
+     var btn = document.getElementById('myBtn');
+     var span = document.getElementById('closePopup');
+    
+     btn.onclick = function() {
+        popup.style.display = 'block';
+     }
+    
+     span.onclick = function() {
+        popup.style.display = 'none';
+     }
+    
+     window.onclick = function(event) {
+        if (event.target == popup) {
+          popup.style.display = 'none';
+        }
+     }
+    
+     // Form submission handling
+     document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting
+        console.log('Form submitted:', event.target);
+        // Here you can handle the form data as needed, e.g., send it to your server
+    
+        // Close the popup
+        popup.style.display = 'none';
+     });
+    </script>
+</body>
+</html>

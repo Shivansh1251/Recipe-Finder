@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Meal For Your Ingredients</title>
+    <link rel="icon" href="C:\Users\hp\Downloads\recipe-book.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body background="C:\Users\hp\Downloads\Images\Free-blue-gradient-pattern-background-from-Fotor.webp">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:cadetblue;">
+        <div class="container">
+            <a class="navbar-brand" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_mainpp.html">Recipes</a>
+            <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\Home_pp.html"
+                            aria-current="page">Home </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppVeg.html" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Veg</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppVeg.html">Dal Makhni</a>
+                            <a class="dropdown-item" href="#">Shahi Paneer</a>
+                            <a class="dropdown-item" href="#">Manchurian</a>
+                            <a class="dropdown-item" href="#">Rajma</a>
+                            <a class="dropdown-item" href="#">Chana Masala</a>
+                            <a class="dropdown-item" href="#">Raita</a>
+                            <a class="dropdown-item" href="#">Butter Naan</a>
+                            <a class="dropdown-item" href="#">Missi Roti</a>
+                            <a class="dropdown-item" href="#">Jeera Rice</a>
+                            <a class="dropdown-item" href="#">Curry</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Non-veg</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Sorry!!!</a>
+                            <a class="dropdown-item" href="#">Vegetarian only</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppStarters.html" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Starters</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item"
+                                href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppStarters.html">Fries</a>
+                            <a class="dropdown-item" href="#Sandwich">Sandwich</a>
+                            <a class="dropdown-item" href="#Burger">Burger</a>
+                            <a class="dropdown-item" href="#">Pizza</a>
+                            <a class="dropdown-item" href="#Wrap">Wrap</a>
+                            <a class="dropdown-item" href="#Chilli">Honey Chilli Potatoes</a>
+                            <a class="dropdown-item" href="#Spring roll">Spring Roll</a>
+                            <a class="dropdown-item" href="#Tikki">Aloo Tikki</a>
+                            <a class="dropdown-item" href="#Dosa">Dosa</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppDesert.html" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Deserts</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppDesert.html">Ice-cream</a>
+                            <a class="dropdown-item" href="#">Cakes</a>
+                            <a class="dropdown-item" href="#">Brownies</a>
+                            <a class="dropdown-item" href="#">Muffins</a>
+                            <a class="dropdown-item" href="#">Cookies</a>
+                            <a class="dropdown-item" href="#">Fruit Custard</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppDrinks.html" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Drinks</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\New_ppDrinks.html">Tea</a>
+                            <a class="dropdown-item" href="#">Coffee</a>
+                            <a class="dropdown-item" href="#">Lemonade</a>
+                            <a class="dropdown-item" href="#">Juice</a>
+                            <a class="dropdown-item" href="#">Mojito</a>
+                            <a class="dropdown-item" href="#">Milk</a>
+                            <a class="dropdown-item" href="#">Martini</a>
+                            <a class="dropdown-item" href="#">Iced Tea</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page" style="color:cadetblue;">
+                           Content by:- @Shivansh Garg yooooo!!! Welcome to webpage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://myaccount.google.com/" aria-current="page">Log In </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link active" href="C:\Users\hp\OneDrive\Desktop\HTML\Project\Feedback form.html" aria-current="page" >Feedback </a>
+                   </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container1">
+        <div class="meal-wrapper">
+
+            <h3 class="title"><a id="Fries">Fries</a></h3>
+            <img align="right" src="data:image/jpeg;base64,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">
+            Making fries at home can be a delicious and satisfying process. Here's a simple recipe for homemade fries:
+            <h4>Ingredients:</h4>
+             Potatoes(russet or Yukon Gold are good choices)
+            Vegetable oil or peanut oil for frying
+            Salt, to taste
+            Optional seasonings: black pepper, garlic powder, paprika, or your favorite herbs and spices
+            
+            <h4>Instructions:</h4>
+            <h5>Preparation:</h5>
+            Wash and peel the potatoes (optional, you can leave the skin on for a rustic texture).
+            Cut the potatoes into uniform sticks, about 1/4 to 1/2 inch wide.
+            Soak:
+
+            Soak the cut potatoes in a bowl of cold water for at least 30 minutes. This helps remove excess starch,
+            resulting in crispier fries.
+            Dry:
+
+            Pat the soaked fries dry with a clean kitchen towel or paper towels.
+            Preheat the oil:
+
+            Heat the vegetable or peanut oil in a deep fryer or large, heavy pot to 325-350°F (163-177°C).
+            First Fry:
+
+            Carefully add a small batch of fries to the hot oil. Fry for about 3-4 minutes, or until they are light
+            golden brown.
+            Remove the fries and place them on a paper towel-lined plate. Let them cool while you fry the remaining
+            batches.
+            Second Fry:
+
+            Increase the oil temperature to 375°F (190°C).
+            Once the oil is hot, add the partially cooked fries in batches again and fry for an additional 2-3 minutes
+            or until they reach a deep golden brown and are crispy.
+            Season:
+
+            Remove the fries from the oil and immediately season them with salt. Add any additional seasonings according
+            to your preference.
+            Serve:
+
+            Serve the fries hot with your favorite dipping sauce (ketchup, mayo, aioli, etc.).
+            <h5>Tips:</h5>
+            Be cautious when working with hot oil, and never leave it unattended.
+            Ensure that the fries are cut uniformly for even cooking.
+            You can experiment with different seasonings to customize the flavor of your fries.
+            Enjoy your homemade fries!
+<br><hr>
+<h2><a id="Sandwich">Sandwich</a></h2>
+<img align="right" src="data:image/jpeg;base64,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">
+Making sandwiches at home can be a delicious and satisfying process. Here's a simple recipe for homemade fries:
+<h4>Ingredients:</h4>
+2 slices of your favorite bread (whole wheat, sourdough, or multigrain)
+4-6 slices of roasted turkey breast
+1/2 ripe avocado, sliced
+2 slices of Swiss or cheddar cheese
+Handful of fresh lettuce leaves
+2-3 slices of ripe tomato
+Red onion, thinly sliced (optional)
+Mayonnaise
+Mustard
+Salt and pepper to taste
+<h4>Instructions:</h4>
+<h5>Prepare the Ingredients:</h5>
+Slice the avocado, tomato, and red onion.
+Lay out the slices of bread on a clean surface.
+Build the Sandwich:
+On one slice of bread, spread a layer of mayonnaise and the other slice with mustard.
+Start building the sandwich by layering the roasted turkey on one side of the bread.
+Add Cheese and Vegetables:
+Place the Swiss or cheddar cheese on top of the turkey.
+Add slices of avocado, tomato, and red onion (if using).
+Season with salt and pepper to taste.
+Lettuce Layer:
+Arrange a handful of fresh lettuce leaves on top of the vegetables.
+Top and Slice:
+Place the second slice of bread on top, condiment-side down.
+Press the sandwich gently together.
+Optionally, you can cut the sandwich in half for easier handling.
+<h4>Serve:</h4>
+Serve your turkey and avocado sandwich with a side of your favorite chips, pickles, or a small salad.
+Feel free to customize this recipe by adding your favorite condiments, swapping out the type of bread, or incorporating other ingredients that you enjoy. The beauty of sandwiches lies in their versatility, so don't hesitate to get creative!
+<br><hr>
+<h3><a id="Burger">Classic Burger</a></h3>
+<img align="right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK5wsk2NSzLDb75gfQICArXsOK_4oEjNBD1A&usqp=CAU">
+Certainly! Here's a classic recipe for a homemade beef burger. You can customize the toppings and condiments based on your preferences.
+<h4>Ingredients:</h4>
+<h5>For the Patties:</h5>
+- Salt and pepper, to taste
+- 1 teaspoon garlic powder (optional)
+- 1 tablespoon Worcestershire sauce (optional)
+<h5>For Assembling:</h5>
+- Burger buns
+- Lettuce leaves
+- Tomato slices
+- Onion slices (raw or grilled)
+- Pickles
+- Cheese slices (cheddar, Swiss, or your choice)
+- Ketchup and mustard
+- Mayonnaise
+<h4>Instructions:</h4>
+1. Prepare the Patties:
+   - In a mixing bowl, combine the ground beef with salt, pepper, garlic powder (if using), and Worcestershire sauce (if using). Mix gently until just combined; avoid overmixing, as it can make the burgers dense.
+2. Shape the Patties:
+   - Divide the meat mixture into equal portions and shape them into burger patties. Make an indentation in the center of each patty with your thumb; this prevents the burger from puffing up too much during cooking.
+3. Cook the Patties:
+   - You can cook the patties on a grill, stovetop, or in the oven. If grilling or using a stovetop, cook for about 4-5 minutes per side for medium doneness. Make sure the internal temperature reaches at least 160°F (71°C).
+4. Add Cheese:
+   - In the last minute of cooking, add a slice of cheese to each patty and cover to let it melt.
+5. Prepare the Buns:
+   - While the patties are cooking, you can toast the burger buns on the grill or in a toaster. Toasting adds a nice crunch to the buns.
+6. Assemble the Burger:
+   - Place a lettuce leaf on the bottom half of each bun.
+   - Add the cooked patty with melted cheese.
+   - Top with tomato slices, onion slices, and pickles.
+   - Spread ketchup, mustard, and mayonnaise on the top half of the bun.
+7. Serve:
+   - Put the assembled burger together, secure with a toothpick if needed, and serve immediately.
+Feel free to customize your burger with additional toppings like bacon, sautéed mushrooms, or your favorite sauces. Enjoy your delicious homemade burger!
+<br><hr><h3> <a id="Wrap">Veggie Wrap</a> </h3>
+<img align="right" src="data:image/jpeg;base64,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">
+Certainly! Here's a recipe for a flavorful and satisfying Veggie Wrap:
+<h4>Ingredients:</h4>
+For the Hummus:
+- 1 can (15 ounces) chickpeas, drained and rinsed
+- 3 tablespoons tahini
+- 2 tablespoons olive oil
+- 1 clove garlic, minced
+- Juice of 1 lemon
+- Salt and pepper to taste
+- Water (as needed for desired consistency)
+For the Wrap:
+- Large whole wheat or spinach tortillas
+- Hummus (homemade or store-bought)
+- 1 cup baby spinach leaves
+- 1 cucumber, thinly sliced
+- 1 bell pepper (any color), thinly sliced
+- 1 medium carrot, julienned or shredded
+- 1/2 red onion, thinly sliced
+- Feta cheese, crumbled (optional)
+- Black olives, sliced (optional)
+<h4>Instructions:</h4>
+1. Prepare the Hummus:
+   - In a food processor, combine chickpeas, tahini, olive oil, minced garlic, lemon juice, salt, and pepper.
+   - Blend until smooth, adding water gradually until you achieve your desired hummus consistency.
+2. Assemble the Wrap:
+   - Lay out a tortilla on a clean surface.
+   - Spread a generous layer of hummus over the center of the tortilla, leaving a small border around the edges.
+3. Add Vegetables:
+   - Arrange baby spinach leaves over the hummus layer.
+   - Add cucumber slices, bell pepper strips, julienned carrots, and thinly sliced red onion on top.
+4. Optional Toppings:
+   - If desired, sprinkle crumbled feta cheese and sliced black olives over the veggies.
+5. Fold and Serve:
+   - Fold in the sides of the tortilla and then roll it up tightly, creating a wrap.
+6. Slice and Enjoy:
+   - Slice the wrap in half diagonally for easy serving.
+   - Serve immediately, and enjoy your Veggie Hummus Wrap!
+Feel free to customize this wrap with your favorite vegetables or add a drizzle of balsamic glaze or your preferred dressing for extra flavor. It's a versatile and nutritious option for a quick and satisfying meal.
+<br><hr>
+<h3><a id="Chilli">Honey Chili Potatoes</a></h3>
+<img align="right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRAjA_PpN6UyMgw-shxMxRgb2LVfsOE09qIA&usqp=CAU">
+Absolutely, honey chili potatoes are a delicious and popular Indo-Chinese dish. Here's a simple recipe for making Honey Chili Potatoes:
+<h4> Ingredients:</h4>
+For the Potatoes:
+- 4 medium-sized potatoes, cut into thin strips or wedges
+- 1/2 cup cornflour (cornstarch)
+- Salt to taste
+- Vegetable oil for frying
+For the Sauce:
+- 2 tablespoons vegetable oil
+- 2 tablespoons finely chopped garlic
+- 1 tablespoon finely chopped ginger
+- 2 green chilies, thinly sliced (adjust to taste)
+- 2 tablespoons soy sauce
+- 1 tablespoon tomato ketchup
+- 1 tablespoon chili sauce (adjust to taste)
+- 1 tablespoon honey
+- 1 teaspoon white vinegar
+- Salt and pepper to taste
+- 1 spring onion, chopped (for garnish)
+<h4> Instructions:</h4>
+1. Prepare the Potatoes:
+   - In a large bowl, toss the potato strips with cornflour and a pinch of salt until the potatoes are evenly coated.
+   - Heat vegetable oil in a deep pan or wok for frying. Fry the potato strips until golden brown and crispy. Remove and drain excess oil on paper towels.
+2. Make the Sauce:
+   - In a separate pan, heat 2 tablespoons of vegetable oil over medium heat.
+   - Add finely chopped garlic, ginger, and sliced green chilies. Sauté for a minute until fragrant.
+3. Create the Honey Chili Sauce:
+   - Add soy sauce, tomato ketchup, chili sauce, honey, and white vinegar to the pan. Stir well to combine.
+   - Season the sauce with salt and pepper to taste. Adjust the sweetness and spiciness according to your preference.
+4. Coat the Potatoes:
+   - Add the fried potato strips to the sauce. Toss the potatoes until they are well coated in the honey chili sauce.
+5. Garnish and Serve:
+   - Transfer the honey chili potatoes to a serving dish.
+   - Garnish with chopped spring onions.
+6. Serve Immediately:
+   - Serve the Honey Chili Potatoes hot as an appetizer or snack.
+Enjoy the sweet and spicy flavors of these honey chili potatoes! They make a great addition to any party or gathering.
+<br><hr>
+<h3><a id="Spring roll"> Vegetable Spring Rolls</a></h3>
+<img align="right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH3CVfS4EcexhWOguEFLjEOYEBxHbuZv36mw&usqp=CAU">
+Certainly! Here's a recipe for classic vegetable spring rolls. These spring rolls are filled with a flavorful mixture of vegetables and wrapped in a thin, crispy wrapper. Feel free to adjust the filling ingredients based on your preferences.
+<h4> Ingredients:</h4>
+For the Filling:
+- 1 cup shredded cabbage
+- 1 cup julienned carrots
+- 1 cup bean sprouts
+- 1 cup thinly sliced bell peppers (any color)
+- 1 cup thinly sliced mushrooms
+- 1/2 cup chopped green onions
+- 2 cloves garlic, minced
+- 1 tablespoon soy sauce
+- 1 tablespoon oyster sauce (optional for umami flavor)
+- 1 teaspoon sesame oil
+- Salt and pepper to taste
+- 2 tablespoons vegetable oil for stir-frying
+For the Spring Roll Wrappers:
+- 10-12 spring roll wrappers (available in the freezer section of most grocery stores)
+- Water for sealing the wrappers
+For Frying:
+- Vegetable oil for deep frying
+<h4>Instructions:</h4>
+1. Prepare the Filling:
+   - Heat 2 tablespoons of vegetable oil in a pan or wok over medium heat.
+   - Add minced garlic and sauté until fragrant.
+   - Add shredded cabbage, julienned carrots, bell peppers, mushrooms, and bean sprouts. Stir-fry for 3-4 minutes until the vegetables are slightly tender but still crisp.
+   - Add soy sauce, oyster sauce (if using), sesame oil, chopped green onions, salt, and pepper. Continue to stir-fry for an additional 2-3 minutes. Remove from heat and let the filling cool.
+2. Assemble the Spring Rolls:
+   - Take one spring roll wrapper at a time, keeping the others covered with a damp cloth to prevent drying.
+   - Place a spoonful of the vegetable filling near the corner of the wrapper.
+   - Fold the corner over the filling, then fold in the sides, and roll tightly to seal. Use a little water on the edges to help seal the wrapper.
+3. Deep Fry the Spring Rolls:
+   - Heat vegetable oil in a deep fryer or a deep, heavy pan to 350°F (180°C).
+   - Carefully lower the spring rolls into the hot oil, a few at a time, and fry until golden brown and crispy, about 3-4 minutes.
+   - Remove the spring rolls with a slotted spoon and place them on a paper towel-lined plate to drain any excess oil.
+4. Serve:
+   - Serve the vegetable spring rolls hot with your favorite dipping sauce, such as sweet chili sauce or soy sauce.
+Enjoy these homemade vegetable spring rolls as a delightful appetizer or snack!
+<br><hr>
+<h3><a id="Tikki">Aloo Tikki</a></h3>
+<img align="right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZoV8mh78p1tnMgimnxX3DbfKGcEmghf6_Kw&usqp=CAU">
+Aloo Tikki is a popular Indian street food made with spiced mashed potatoes, shaped into patties, and shallow-fried until crispy. Here's a simple recipe for making Aloo Tikki:
+<h4> Ingredients:</h4>
+- 4 large potatoes, boiled, peeled, and mashed
+- 1/2 cup peas, boiled (optional)
+- 1 small onion, finely chopped
+- 1 green chili, finely chopped (adjust to taste)
+- 1 teaspoon ginger, grated
+- 1/2 teaspoon cumin seeds
+- 1/2 teaspoon coriander powder
+- 1/2 teaspoon garam masala
+- 1/2 teaspoon red chili powder (adjust to taste)
+- Salt to taste
+- 2 tablespoons chopped fresh coriander (cilantro)
+- 2 tablespoons cornflour or breadcrumbs (for binding)
+- Vegetable oil for shallow frying
+<h4>Instructions:</h4>
+1. Prepare the Potatoes:
+   - Boil the potatoes until they are fully cooked. Peel and mash them in a large mixing bowl.
+2. Prepare the Filling:
+   - In a pan, heat a little oil. Add cumin seeds and let them splutter.
+   - Add finely chopped onions, green chili, and grated ginger. Sauté until the onions are translucent.
+3. Combine Ingredients:
+   - Add the sautéed onion mixture to the mashed potatoes.
+   - Add boiled peas (if using), coriander powder, garam masala, red chili powder, salt, and chopped fresh coriander. Mix well to combine all the ingredients.
+4. Shape the Aloo Tikki:
+   - Take a portion of the mixture and shape it into a round or oval patty. Repeat with the remaining mixture.
+5. Coat with Cornflour or Breadcrumbs:
+   - Coat each aloo tikki with a thin layer of cornflour or breadcrumbs. This helps in giving a crispy texture when frying.
+6. Shallow Fry:
+   - Heat vegetable oil in a pan over medium heat for shallow frying.
+   - Place the aloo tikki in the hot oil and cook until the bottom side is golden brown. Flip and cook the other side until it's crispy and golden.
+7. Drain Excess Oil:
+   - Once the aloo tikki is fried, place it on a paper towel to absorb any excess oil.
+8. Serve:
+   - Serve the Aloo Tikki hot with chutney or sauce of your choice. It can also be served with yogurt and tamarind chutney as part of chaat.
+Enjoy these delicious Aloo Tikki as a snack or as part of a meal!
+<br><hr>
+<h3><a id="Dosa">Dosa</a></h3>
+<img align="right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOgTtRBdN4Mol2GYCzeXmLO8RVMK1Q5Wynsg&usqp=CAU">
+Dosa is a popular South Indian crepe made from fermented rice and urad dal (black gram). It is a versatile dish that can be enjoyed with various chutneys, sambar (a lentil-based vegetable stew), or even stuffed with spiced potato filling. Here's a basic recipe for making traditional dosas:
+<h4>Ingredients:</h4>
+For Dosa Batter:
+- 1 cup regular rice
+- 1/2 cup parboiled rice
+- 1/2 cup urad dal (black gram)
+- 1/4 teaspoon fenugreek seeds
+- Water (for soaking and grinding)
+- Salt to taste
+For Making Dosas:
+- Vegetable oil or ghee (clarified butter)
+- Potato masala (optional, for stuffing)
+<h4>Instructions:</h4>
+<h5>For Dosa Batter:</h5>
+1. Soaking:
+   - Wash the regular rice, parboiled rice, urad dal, and fenugreek seeds together. Soak them in water for at least 6 hours or overnight.
+2. Grinding:
+   - Grind the soaked ingredients into a smooth batter. Add water as needed while grinding. The consistency should be similar to pancake batter.
+   - Add salt and mix well. Allow the batter to ferment overnight or for about 8-12 hours in a warm place. The batter should rise and become slightly bubbly.
+<h5>For Making Dosas:</h5>
+1. Preheat the Griddle (Tava):
+   - Heat a non-stick or cast-iron griddle (tava) on medium-high heat.
+2. Grease the Griddle:
+   - Once hot, lightly grease the surface with a few drops of oil using a cut onion or a paper towel.
+3. Pour and Spread the Batter:
+   - Pour a ladleful of dosa batter onto the center of the hot griddle.
+   - Using the back of the ladle, spread the batter in a circular motion to form a thin, even layer.
+4. Drizzle Oil:
+   - Drizzle a few drops of oil or ghee around the edges of the dosa.
+5. Cook Until Crispy:
+   - Cook the dosa until the edges start to lift and become golden brown. The bottom should be crispy.
+6. Fold or Roll:
+   - If you like, you can fold the dosa or roll it. Repeat the process with the remaining batter.
+Optional Potato Masala Filling:
+- Boil and mash potatoes, then sauté them with mustard seeds, urad dal, curry leaves, chopped onions, green chilies, and turmeric powder. Place a spoonful of this filling in the center of the dosa before folding or rolling.
+Serve the dosas hot with coconut chutney, sambar, or any chutney of your choice. Enjoy this classic South Indian dish!
+<br><hr>
